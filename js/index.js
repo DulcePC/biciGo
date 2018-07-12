@@ -16,3 +16,6 @@ document.addEventListener('DOMContentLoaded', function(){
         topLayer.style.width = e.clientX + skew + delta + 'px';
     });
 });
+$(document).ready(function(){
+    $('.parallax').parallax();
+});

@@ -23,7 +23,7 @@ body{
 }
 .submenu ul li{
     display: inline-block;
-    width: 24.5%;
+    width: 25.5%;
     text-align: center;
     color: #fff;
     font-size: 13px;
@@ -35,6 +35,19 @@ ul{
     margin: 0;
     padding: 0;
     display: block;
+}
+@media(min-width:360px){
+    .submenu ul li i{
+        margin-right: 3px;
+        top: 2px;
+        color: black;
+    }
+    .submenu ul li{
+        display: inline-block;
+        width: 32.2%;
+        padding:7px 0;
+        border-right: 0px solid;
+    }
 }
 .navprincipal {
     height: 35px;
@@ -134,4 +147,67 @@ ul{
     body{
         font-size: 75%;
     }
+}
+.ventas{
+    height: 100%;
+    background-color:black;
+}
+h3{
+    margin: 0;
+    color: #FDAB00;
+    text-align: center;
+}
+h6{
+    color: white;
+    margin-bottom:20px; 
+    text-align: center;
+
+}
+.card .card-image img{
+    height: 230px;
+}
+.card-title{
+    color:#f8bbd0;
+}
+.card-content{
+    background-color:white;
+}
+.card-butttoms{
+    background-color: #FDAB00;
+}
+.izquierda{
+    background-color:#FDAB00;
+    border-radius: 100%;
+}
+.derecha{
+    background-color: #FDAB00;
+}
+.pagination li.active {
+    background-color: white;
+  }
+.pagination li a{
+    color:black;
+}  
+.parallax-container {
+    height: 300px;
+}
+.nosotros{
+    height: 100vh;
+    background-image: url('../img/bici2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.noticias{
+    height: 50vh;
+    background-color: yellow;
+}
+.eventos{
+    height: 50vh;
+    background-color: green;
+}
+.actividadesTitulo h4{
+    margin: 0;
+    text-align: center;
+
 }
