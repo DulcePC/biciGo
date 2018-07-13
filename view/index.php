@@ -11,19 +11,18 @@
 
 </head>
 <body>
-    <!-- creo que eliminaremos esto porque no se vuelve responsive, o lo escondemos para para movil o lo hacemos con flexbox ( a trabajar)-->
     <div class="submenu">
        <div class="container">
            <ul class="col l12">
-               <li class="col s3"><a><i class="material-icons tiny">lock_open</i>Entra</a></li>
-               <li class="col s3"><a><i class="material-icons tiny">lock_open</i>Registrate<a></li>
+               <li class="col s3"><a class="modal-trigger" href="#entrar"><i class="material-icons tiny">lock_open</i>Entra</a></li>
+               <li class="col s3"><a><i class="material-icons  tiny">lock_open</i>Registrate<a></li>
                <li class="col s3"><a><i class="material-icons tiny">mail</i>bicigo@gmail.com</a></li>
            </ul>
        </div>
     </div>
     <nav class="navprincipal"> 
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><span>B</span>iciGo</a>
+            <a href="#" class="brand-logo"><span id="b">B</span>iciGo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="sass.html">Inicio</a></li>
                 <li><a href="badges.html">Categorias</a></li>
@@ -294,6 +293,22 @@
             </div>
         </div> 
     </div>  
+    <!--MODALS!-->
+    <div id="entrar" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+
+
+
+
+
 </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
