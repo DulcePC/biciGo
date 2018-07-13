@@ -150,6 +150,7 @@ ul{
 }
 .ventas{
     height: 100%;
+    padding-bottom: 15px;
     background-color:black;
 }
 h3{
@@ -177,37 +178,93 @@ h6{
 }
 .izquierda{
     background-color:#FDAB00;
-    border-radius: 100%;
 }
 .derecha{
     background-color: #FDAB00;
 }
 .pagination li.active {
-    background-color: white;
+    background-color: transparent;
+    color:#FDAB00;
   }
 .pagination li a{
-    color:black;
+    color:white;
 }  
 .parallax-container {
     height: 300px;
 }
 .nosotros{
     height: 100vh;
-    background-image: url('../img/bici2.jpg');
+    background-image: url('../img/bici5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
+
+}
+.contenedor{
+    background-color: rgba(48, 49, 49, 0.4);
+    margin-top:60px;
+    border-radius: 30px ;
+    border:1px solid white;
+}
+@media(max-width:768px){
+    .contenedor{
+        margin-top:5px;
+    }
+}
+.texto{
+    padding: 2em;
+    color:white;
+}
+#suscribete{
+    margin: 10px;
+    text-transform: none;
 }
 .noticias{
-    height: 50vh;
-    background-color: yellow;
+    height: 50%;
+    background-color:black;
+}
+.noticias h4{
+    color:#FDAB00;
 }
 .eventos{
-    height: 50vh;
-    background-color: green;
+    height: 50%;
+    background-image: url('../img/bici7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .actividadesTitulo h4{
     margin: 0;
     text-align: center;
 
+}
+.eventos h4{
+    color:#FDAB00
+}
+.titulo{
+    padding-top: 20px;
+    text-align: center;
+}
+#footer{
+    background-color: black;
+}
+.creditos{
+    border-top: 1px solid #FDAB00;
+    font-style: bold;
+
+}
+.page-footer  h6{
+    color: #FDAB00;
+}
+.page-footer  p{
+    color: white;
+    font-style: bold;
+    padding: 2em;
+}
+.nomargin{
+    margin:0;
+}
+.contenedorEventos{
+    background-color: rgba(48, 49, 49, 0.4);
+    margin-top:30px;
+    margin-bottom:30px;
 }
