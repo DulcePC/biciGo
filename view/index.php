@@ -296,7 +296,7 @@
     <!--MODALS!-->
     <div id="entrar" class="modal">
         <div class="modal-content">
-            <h4>Modal Header</h4>
+            <h4>klk</h4>
             <p>A bunch of text</p>
         </div>
         <div class="modal-footer">
