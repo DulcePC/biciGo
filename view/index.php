@@ -6,6 +6,7 @@
     <title>biciGo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/materialize.css" />
     <link rel="stylesheet" href="css/index.css" />
 
@@ -296,19 +297,64 @@
     <!--MODALS!-->
     <div id="entrar" class="modal">
         <div class="modal-content">
-            <h4>klk</h4>
-            <p>A bunch of text</p>
+            <h4>Accede</h4>
+            <div class="row">
+                <div class="col l7 s12 m7">
+                    <form method="post" class="col l12 s12">
+                        <div class="input-field col l12 s12 m12">
+                            <input placeholder="Usuario" id="first_name" type="text" class="validate">
+                            <label for="first_name">Usuario</label>
+                        </div>
+                        <div class="input-field col l12 s12 m12">
+                            <input placeholder="Clave" id="first_name" type="text" class="validate">
+                            <label for="first_name">Clave</label>
+                        </div>
+                        <a class="btn entra-btn">Entra</a>
+                    </form>
+                    <div class="row">
+                        <div class="col l6 social-nav model-3d-0 ">
+                            <div class="col l4">
+                                <a href="#!" class="facebook">
+                                    <div class="front">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l4">
+                                <a href="#!" class="twitter">
+                                    <div class="front">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l4">
+                                <a href="#!" class="instagram">
+                                    <div class="front">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l5  s12 m5 black">
+                    <img src="img/bici5.jpg" class="imgEntra">
+                </div>
+            </div>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
         </div>
     </div>
-
-
-
-
-
-
 </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
