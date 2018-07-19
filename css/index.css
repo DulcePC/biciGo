@@ -279,10 +279,8 @@ h6{
     margin-top:30px;
     margin-bottom:30px;
 }
-/* modal */
 .modal{
     background-color: black;
-    border-radius: 5px;
 }
 .modal .modal-footer{
     background-color: black;
@@ -295,10 +293,6 @@ h6{
 color: #FDAB00;
 letter-spacing: 3px;
 
-}
-.modal p {
-    color:white;
-    font-style: bold;
 }
 .entra-btn{
     border: none;
@@ -397,68 +391,4 @@ a.instagram .front {
     -ms-backface-visibility: visible;
     -o-backface-visibility: visible;
     backface-visibility: visible;
-}
-/* formulario */
-.input-field label{
-    color:white;
-}
-input[type=text]{
-    color:white;
-}
-input[type=password]{
-    color:white;
-}
-span{
-    color:white;
-}
-/* overlay */
-.equipo{
-    height: 100%;
-    background-color: black;
-    margin-bottom: 1px solid white;
-}
-.equipo .titulo{
-    color:#FDAB00
-}
-.dulce{
-    position: relative;
-    width: 50%;
-    
-}
-.john{
-    position: relative;
-    width: 80%;
-
-}
-.dulceImg{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-}
-.contacto{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}  
-.dulce:hover .overlay {
-    height: 70%;
-}
-.john:hover .overlay {
-    height: 70%;
 }
