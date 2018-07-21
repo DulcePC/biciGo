@@ -19,5 +19,8 @@ document.addEventListener('DOMContentLoaded', function(){
 $(document).ready(function(){
     $('.parallax').parallax();
     $(".modal").modal();
-
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
 });

@@ -16,7 +16,7 @@
        <div class="container">
            <ul class="col l12">
                <li class="col s3"><a class="modal-trigger" href="#entrar"><i class="material-icons tiny">lock_open</i>Entra</a></li>
-               <li class="col s3"><a><i class="material-icons  tiny">lock_open</i>Registrate<a></li>
+               <li class="col s3"><a class="modal-trigger" href="#registrate"><i class="material-icons  tiny">lock_open</i>Registrate<a></li>
                <li class="col s3"><a><i class="material-icons tiny">mail</i>bicigo@gmail.com</a></li>
            </ul>
        </div>
@@ -186,7 +186,7 @@
             </div>
             <div class="container contenedorEventos">
                 <div class="row">
-                    <div class="col l6 m6 s6">
+                    <div class="col l6 m6 s12">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/bici11.jpg">
@@ -201,7 +201,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l6 m6 s6">
+                    <div class="col l6 m6 s12">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/bici11.jpg">
@@ -225,7 +225,7 @@
             </div>
             <div class="container contenedorEventos">
                 <div class="row">
-                    <div class="col l6 m6 s6">
+                    <div class="col l6 m6 s12">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/bici11.jpg">
@@ -240,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l6 m6 s6">
+                    <div class="col l6 m6 s12">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/bici11.jpg">
@@ -259,6 +259,70 @@
             </div>
         </div>
     </section>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/bici8.jpg"></div>
+    </div>
+    <div class="equipo">
+        <div class="titulo">
+            <h4>Nuestro equipo</h4>
+        </div>
+        <div class="row">
+            <div class="col l12 s12 m12">
+                <div class="dulce">
+                    <img src="img/dulce1.jpg" class="dulceImg">
+                    <div class="overlay">
+                        <div class="contacto">
+                            <h5>Dulce Perez</h5>
+                            <h6>Web Designer</h6>
+                            <div class="col l6  social-nav model-3d-0 ">
+                                <a href="#!" class="facebook">
+                                    <div class="front">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l6  social-nav model-3d-0 ">
+                                <a href="#!" class="linkedin">
+                                    <div class="front">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/bici10.jpg"></div>
+    </div>
+    <div class="testimonios">
+        <div class="carousel carousel-slider center">
+            <div class="carousel-item red white-text" href="#one!">
+            <h2>First Panel</h2>
+            <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+            <h2>Second Panel</h2>
+            <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+            <h2>Third Panel</h2>
+            <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+            <h2>Fourth Panel</h2>
+            <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+    </div>
     <footer class="page-footer col s12 l12 m12 black">
         <div class="container">
         <div class="row">
@@ -303,11 +367,11 @@
                     <form method="post" class="col l12 s12">
                         <div class="input-field col l12 s12 m12">
                             <input placeholder="Usuario" id="first_name" type="text" class="validate">
-                            <label for="first_name">Usuario</label>
+                            <!-- <label for="first_name">Usuario</label> -->
                         </div>
                         <div class="input-field col l12 s12 m12">
                             <input placeholder="Clave" id="first_name" type="text" class="validate">
-                            <label for="first_name">Clave</label>
+                            <!-- <label for="first_name">Clave</label> -->
                         </div>
                         <a class="btn entra-btn">Entra</a>
                     </form>
@@ -355,9 +419,76 @@
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
         </div>
     </div>
+    <div id="registrate" class="modal">
+        <div class="modal-content">
+            <h4>Registrate</h4>
+            <div class="row">
+                <div class="col l7 s12 m7">
+                    <form method="post" class="col l12 s12">
+                        <div class="input-field col l12 s12 m12">
+                            <input placeholder="Nombre" id="first_name" type="text" class="validate">
+                            <!-- <label for="first_name">Nombre</label> -->
+                        </div>
+                        <div class="input-field col l12 s12 m12">
+                            <input placeholder="Usuario" id="first_name" type="text" class="validate">
+                            <!-- <label for="first_name">Usuario</label> -->
+                        </div>
+                        <div class="input-field col l12 s12 m12">
+                            <input placeholder="Clave" id="first_name" type="text" class="validate">
+                            <!-- <label for="first_name">Clave</label> -->
+                        </div>
+                        <a class="btn entra-btn">Registrarte</a>
+                    </form>
+                    <div class="row">
+                        <div class="col l6 social-nav model-3d-0 ">
+                            <div class="col l4">
+                                <a href="#!" class="facebook">
+                                    <div class="front">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l4">
+                                <a href="#!" class="twitter">
+                                    <div class="front">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l4">
+                                <a href="#!" class="instagram">
+                                    <div class="front">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="col l12">Al darle click a registrarte estas aceptando nuestros terminos</p>
+                </div>
+                <div class="col l5  s12 m5 black">
+                    <img src="img/bici5.jpg" class="imgEntra">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
+        </div>
+    </div>
+
 </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="js/index.js"></script>    
+    <script src="js/index.js"></script>   
 </body>
 </html>
