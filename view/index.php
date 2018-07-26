@@ -267,7 +267,38 @@
             <h4>Nuestro equipo</h4>
         </div>
         <div class="row">
-            <div class="col l12 s12 m12">
+            <div class="col l6 s6 m6">
+                <div class="dulce">
+                    <img src="img/dulce1.jpg" class="dulceImg">
+                    <div class="overlay">
+                        <div class="contacto">
+                            <h5>Dulce Perez</h5>
+                            <h6>Web Designer</h6>
+                            <div class="col l6  social-nav model-3d-0 ">
+                                <a href="#!" class="facebook">
+                                    <div class="front">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l6  social-nav model-3d-0 ">
+                                <a href="#!" class="linkedin">
+                                    <div class="front">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                    <div class="back">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l6 s6 m6">
                 <div class="dulce">
                     <img src="img/dulce1.jpg" class="dulceImg">
                     <div class="overlay">
@@ -305,21 +336,53 @@
     </div>
     <div class="testimonios">
         <div class="carousel carousel-slider center">
-            <div class="carousel-item red white-text" href="#one!">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
+            <div class="carousel-item " href="#one!">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l12 s12 m12">
+                            <div class="marginbottom descripcion">
+                                <h4>Juan Martinez</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque ad optio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item amber white-text" href="#two!">
-            <h2>Second Panel</h2>
-            <p class="white-text">This is your second panel</p>
+            <div class="carousel-item" href="#two!">
+            <div class="container">
+                    <div class="row">
+                        <div class="col l12 s12 m12">
+                            <div class="marginbottom descripcion">
+                                <h4>Juan Martinez</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque ad optio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item green white-text" href="#three!">
-            <h2>Third Panel</h2>
-            <p class="white-text">This is your third panel</p>
+            <div class="carousel-item " href="#three!">
+            <div class="container">
+                    <div class="row">
+                        <div class="col l12 s12 m12">
+                            <div class="marginbottom descripcion">
+                                <h4>Juan Martinez</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque ad optio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item blue white-text" href="#four!">
-            <h2>Fourth Panel</h2>
-            <p class="white-text">This is your fourth panel</p>
+            <div class="carousel-item" href="#four!">
+            <div class="container">
+                    <div class="row">
+                        <div class="col l12 s12 m12">
+                            <div class="marginbottom descripcion">
+                                <h4>Juan Martinez</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque ad optio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

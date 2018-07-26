@@ -1,0 +1,42 @@
+
+.prueba{
+    z-index: 2
+}
+.sidenav{
+    background-color: black;
+}
+.sidenav li a{
+    color:white;
+}
+.user-view{
+    background-color: #FDAB00;
+}
+.sidenav .material-icons{
+    color:white;
+}
+.collapsible{
+    margin:0;
+    padding: 0;
+}
+.collapsible div{
+    color:white;
+}
+.collapsible-body span{
+    color:black;
+    text-align: center;
+    padding: 15px;
+
+}
+.cerrarmargin{
+    margin-top: 130%;
+}
+.publicar{
+    background-color: white;
+    color:black;
+    border-bottom: 1px solid black;
+
+}
+.publicar_boton{
+    background-color: green;
+    margin:5px;
+}

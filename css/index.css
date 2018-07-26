@@ -416,7 +416,7 @@ span{
 }
 /* overlay */
 .equipo{
-    height: 100%;
+
     background-color: grey;
 
 }
@@ -425,19 +425,16 @@ span{
 }
 .dulce{
     position: relative;
-    width: 30%;
+    width: 100%;
     margin: auto;
-    
-}
-.john{
-    position: relative;
-    width: 80%;
 
+    
 }
 .dulceImg{
     display: block;
     width: 100%;
     height: auto;
+    
 }
 .overlay {
     position: absolute;
@@ -467,3 +464,14 @@ span{
     height: 70%;
 }
 /* testimonios */
+.testimonios{
+    height: 80vh;
+}
+.testimonios .marginbottom{
+    background-color:#FDAB00;
+}
+.marginbottom .descripcion{
+    padding:  2em;
+    text-align: center;
+    color:black;
+}
