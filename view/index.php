@@ -337,7 +337,7 @@
     <div class="testimonios">
         <div class="carousel carousel-slider center">
             <div class="carousel-item " href="#one!">
-                <div class="container">
+                <!-- <div class="container"> -->
                     <div class="row">
                         <div class="col l12 s12 m12">
                             <div class="marginbottom descripcion">
@@ -346,10 +346,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="carousel-item" href="#two!">
-            <div class="container">
+                <!-- <div class="container"> -->
                     <div class="row">
                         <div class="col l12 s12 m12">
                             <div class="marginbottom descripcion">
@@ -358,10 +358,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="carousel-item " href="#three!">
-            <div class="container">
+                <!-- <div class="container"> -->
                     <div class="row">
                         <div class="col l12 s12 m12">
                             <div class="marginbottom descripcion">
@@ -370,10 +370,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
             <div class="carousel-item" href="#four!">
-            <div class="container">
+                <!-- <div class="container"> -->
                     <div class="row">
                         <div class="col l12 s12 m12">
                             <div class="marginbottom descripcion">
@@ -382,7 +382,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>

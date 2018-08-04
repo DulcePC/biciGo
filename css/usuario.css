@@ -1,7 +1,4 @@
 
-.prueba{
-    z-index: 2
-}
 .sidenav{
     background-color: black;
 }
@@ -39,4 +36,7 @@
 .publicar_boton{
     background-color: green;
     margin:5px;
+}
+.buttom-menu{
+    z-index: 1;
 }

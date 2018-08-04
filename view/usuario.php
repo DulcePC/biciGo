@@ -13,7 +13,8 @@
 
 </head>
 <body>
-<ul id="slide-out" class="sidenav collapsible">
+<nav>
+    <ul id="slide-out" class="sidenav collapsible">
     <li>
         <div class="user-view">
             <div class="background">
@@ -46,11 +47,10 @@
             </div>
         </div>
     </li>
-  <li class="cerrarmargin"><a class="waves-effect" href="#!">Cerrar seccion</a></li>
-</ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-
+    <li class="cerrarmargin"><a class="waves-effect" href="#!">Cerrar seccion</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons buttom-menu">menu</i></a>
+</nav>
 
 
 
