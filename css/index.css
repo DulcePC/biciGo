@@ -416,9 +416,13 @@ span{
 }
 /* overlay */
 .equipo{
-
     background-color: grey;
 
+}
+.equipo .row2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px !important;
 }
 .equipo .titulo{
     color:black;
@@ -427,14 +431,32 @@ span{
     position: relative;
     width: 100%;
     margin: auto;
-
-    
+    margin-bottom: 10px;
 }
 .dulceImg{
     display: block;
     width: 100%;
-    height: auto;
-    
+    height: 300px;   
+}
+@media(max-width:390px){
+    .dulceImg{
+        width: 100%;
+        height: 200px;   
+        margin-bottom:10px;
+    }
+}
+@media(max-width:300px){
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transition: .5s ease;
+    }
 }
 .overlay {
     position: absolute;
@@ -463,18 +485,29 @@ span{
 .john:hover .overlay {
     height: 70%;
 }
-/* testimonios */
-.testimonios{
-    height: 50vh;
-}
-.testimonios .marginbottom{
-    background-color: #FDAB00;
-    /* height: 100px; */
-    margin: 100px;
-    height: 400px;
+/* testtimonios */
+.descrip_testimonial{
+    margin: 50px;
     padding: 5em;
 }
- .descripcion{
-    text-align: center;
+.carousel-color{
+    background-color: #FDAB00;
+}
+.whites h2{
     color:black;
+}
+.blacks h2{
+    color:white;
+    background-color: black;
+}
+.whites p{
+    color:black;
+}
+.blacks p{
+    color:white;
+}
+@media(max-width:390px){
+    .descrip_testimonial{
+        padding: 4em;
+    }
 }

@@ -13,52 +13,120 @@
 
 </head>
 <body>
-<nav>
-    <ul id="slide-out" class="sidenav collapsible">
-    <li>
-        <div class="user-view">
-            <div class="background">
-                <!-- <img src="images/office.jpg"> -->
+    <div class="col l12 nav">
+        <ul id="slide-out" class="sidenav collapsible">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <!-- <img src="images/office.jpg"> -->
+                </div>
+                <a href="#user"><img class="circle" src="../img/bici10.jpg"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
-            <a href="#user"><img class="circle" src="../img/bici10.jpg"></a>
-            <a href="#name"><span class="white-text name">John Doe</span></a>
-            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="fas fa-plus-circle"></i>Publicar</div>
+            <div class="collapsible-body">
+                <div class="publicar">
+                    <span>Publica una bicicleta</span><a class="btn btn-small publicar_boton right">ahora</a>
+                </div>
+                <div class="publicar">
+                    <span>Publica un accesorio</span><a class="btn btn-small publicar_boton right">ahora</a>
+                </div>
+                <div class="publicar">
+                    <span>Publica una pieza</span><a class="btn btn-small publicar_boton right">ahora</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="fas fa-user-circle"></i>Cuenta</div>
+            <div class="collapsible-body">
+                <div class="publicar">
+                    <a href="#!"><span>Cambiar Nombre</span></a>
+                </div>
+            </div>
+        </li>
+        <li class="cerrarmargin"><a class="waves-effect" href="#!">Cerrar seccion</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger buttom-menu"><i class="material-icons icono_menu">menu</i></a>
+    </div>
+    <section id="agregar_contenido">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 s4 m4">
+                        <div class="public_icon">
+                        <i class="fas fa-plus-circle icon"></i>
+                            <br>
+                            <a href="#">Publicar una bicleta</a>
+                        </div>
+                    </div>
+                    <div class="col l4 s4 m4">
+                        <div class="public_icon">
+                            <i class="fas fa-plus-circle icon"></i>
+                            <br>
+                            <a href="#">Publicar una pieza</a>
+                        </div>
+                    </div>
+                    <div class="col l4 s4 m4">
+                        <div class="public_icon">
+                            <i class="fas fa-plus-circle icon"></i>
+                            <br>
+                            <a href="#">Publicar un accesorio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="publicaciones">
+        <h1 class="flow-text">Mis publicaciones</h1> 
+        <div class="container">
+            <table class="striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                    <td><a class="btn yellow btn-small">Editar</a></td>
+                    <td><a class="btn red btn-small">Eliminar</a></td>
+                    <td><a class="btn green btn-small">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                    <td><a class="btn yellow btn-small">Editar</a></td>
+                    <td><a class="btn red btn-small">Eliminar</a></td>
+                    <td><a class="btn green btn-small">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                    <td><a class="btn yellow btn-small">Editar</a></td>
+                    <td><a class="btn red btn-small">Eliminar</a></td>
+                    <td><a class="btn green btn-small">Ver</a></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="fas fa-plus-circle"></i>Publicar</div>
-        <div class="collapsible-body">
-            <div class="publicar">
-                <span>Publica una bicicleta</span><a class="btn btn-small publicar_boton right">ahora</a>
-            </div>
-            <div class="publicar">
-                <span>Publica un accesorio</span><a class="btn btn-small publicar_boton right">ahora</a>
-            </div>
-            <div class="publicar">
-                <span>Publica una pieza</span><a class="btn btn-small publicar_boton right">ahora</a>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="fas fa-user-circle"></i>Cuenta</div>
-        <div class="collapsible-body">
-            <div class="publicar">
-                <a href="#!"><span>Cambiar Nombre</span></a>
-            </div>
-        </div>
-    </li>
-    <li class="cerrarmargin"><a class="waves-effect" href="#!">Cerrar seccion</a></li>
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons buttom-menu">menu</i></a>
-</nav>
-
-
-
-
-
-
-<script  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-<script src="../js/usuario.js"></script>   
+                <!-- traer todas las publicaciones del usuario
+                -todo esto lo vamos a traer en una table.(editar, vea(modal));-->
+    </section>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="../js/usuario.js"></script> 
+<script src="js/index.js"></script> 
+<script type="text/javascript" charset="utf-8" async defer> 
+
 </html>

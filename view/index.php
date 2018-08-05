@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/usuario.css" />
     <link rel="stylesheet" href="css/index.css" />
-
 </head>
-<body>
+<body> 
     <div class="submenu">
        <div class="container">
            <ul class="col l12">
@@ -265,65 +265,67 @@
     <div class="equipo">
         <div class="titulo">
             <h4>Nuestro equipo</h4>
-        </div>
-        <div class="row">
-            <div class="col l6 s6 m6">
-                <div class="dulce">
-                    <img src="img/dulce1.jpg" class="dulceImg">
-                    <div class="overlay">
-                        <div class="contacto">
-                            <h5>Dulce Perez</h5>
-                            <h6>Web Designer</h6>
-                            <div class="col l6  social-nav model-3d-0 ">
-                                <a href="#!" class="facebook">
-                                    <div class="front">
-                                        <i class="fab fa-facebook-f"></i>
+            <div class="container">
+                <div class="row row2">
+                    <div class="col l6 s6 m6">
+                        <div class="dulce">
+                            <img src="img/dulce1.jpg" class="dulceImg">
+                            <div class="overlay">
+                                <div class="contacto">
+                                    <h5>Dulce Perez</h5>
+                                    <h6>Web Designer</h6>
+                                    <div class="col l6 s6 m6 social-nav model-3d-0 ">
+                                        <a href="#!" class="facebook">
+                                            <div class="front">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                            <div class="back">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="back">
-                                        <i class="fab fa-facebook-f"></i>
+                                    <div class="col l6 s6 m6 social-nav model-3d-0 ">
+                                        <a href="#!" class="linkedin">
+                                            <div class="front">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </div>
+                                            <div class="back">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col l6  social-nav model-3d-0 ">
-                                <a href="#!" class="linkedin">
-                                    <div class="front">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </div>
-                                    <div class="back">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col l6 s6 m6">
-                <div class="dulce">
-                    <img src="img/dulce1.jpg" class="dulceImg">
-                    <div class="overlay">
-                        <div class="contacto">
-                            <h5>Dulce Perez</h5>
-                            <h6>Web Designer</h6>
-                            <div class="col l6  social-nav model-3d-0 ">
-                                <a href="#!" class="facebook">
-                                    <div class="front">
-                                        <i class="fab fa-facebook-f"></i>
+                    <div class="col l6 s6 m6">
+                        <div class="dulce">
+                            <img src="img/oliver1.jpg" class="dulceImg">
+                            <div class="overlay">
+                                <div class="contacto">
+                                    <h5>Dulce Perez</h5>
+                                    <h6>Web Designer</h6>
+                                    <div class="col l6 s6 m6 social-nav model-3d-0 ">
+                                        <a href="#!" class="facebook">
+                                            <div class="front">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                            <div class="back">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="back">
-                                        <i class="fab fa-facebook-f"></i>
+                                    <div class="col l6 s6 m6 social-nav model-3d-0 ">
+                                        <a href="#!" class="linkedin">
+                                            <div class="front">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </div>
+                                            <div class="back">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col l6  social-nav model-3d-0 ">
-                                <a href="#!" class="linkedin">
-                                    <div class="front">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </div>
-                                    <div class="back">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -334,57 +336,41 @@
     <div class="parallax-container">
       <div class="parallax"><img src="img/bici10.jpg"></div>
     </div>
-    <div class="testimonios">
-        <div class="carousel carousel-slider center">
-            <div class="carousel-item " href="#one!">
-                <!-- <div class="container"> -->
-                    <div class="row">
-                        <div class="col l12 s12 m12">
-                            <div class="marginbottom descripcion">
-                                <h4>Juan Martinez</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque ad optio.</p>
-                            </div>
-                        </div>
-                    </div>
-                <!-- </div> -->
+        <div class="carousel carousel-slider center " data-indicators="true">
+            <div class="caroussoel-fixed-item center middle-indicator">
             </div>
-            <div class="carousel-item" href="#two!">
-                <!-- <div class="container"> -->
-                    <div class="row">
-                        <div class="col l12 s12 m12">
-                            <div class="marginbottom descripcion">
-                                <h4>Juan Martinez</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque ad optio.</p>
-                            </div>
-                        </div>
+            <div class="carousel-item carousel-color" href="#one!">
+                <div class="container">
+                    <div class="descrip_testimonial white whites">
+                        <h2>Prof. Juan Martinez</h2>
+                        <p>Estabas buscando la forma de comprar bicicletas para mis hijos y con esta pagina fue totalmente sencillo encontrarlos.</p>
                     </div>
-                <!-- </div> -->
+                </div>
             </div>
-            <div class="carousel-item " href="#three!">
-                <!-- <div class="container"> -->
-                    <div class="row">
-                        <div class="col l12 s12 m12">
-                            <div class="marginbottom descripcion">
-                                <h4>Juan Martinez</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque ad optio.</p>
-                            </div>
-                        </div>
+            <div class="carousel-item carousel-color" href="#two!">
+                <div class="container">
+                    <div class="descrip_testimonial black blacks">
+                        <h2>Franklyn O. Perez</h2>
+                        <p>Puedo vender todas mis piezas de bicicletas por esta pagina facilmente!</p>
                     </div>
-                <!-- </div> -->
+                </div>
             </div>
-            <div class="carousel-item" href="#four!">
-                <!-- <div class="container"> -->
-                    <div class="row">
-                        <div class="col l12 s12 m12">
-                            <div class="marginbottom descripcion">
-                                <h4>Juan Martinez</h4>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque ad optio.</p>
-                            </div>
-                        </div>
+            <div class="carousel-item carousel-color" href="#three!">
+                <div class="container">
+                    <div class="descrip_testimonial white whites">
+                        <h2>Hasebe Yo</h2>
+                        <p>Una pagina totalmente actualizada para encontrar todos los eventos relacionados al ciclismo!</p>
                     </div>
-                <!-- </div> -->
+                </div>
             </div>
-        </div>
+            <div class="carousel-item carousel-color" href="#four!">
+                <div class="container">
+                    <div class="descrip_testimonial black blacks">
+                        <h2>Toño Rosario</h2>
+                        <p>Una website totalmente segura</p>
+                    </div>
+                </div>
+            </div>
     </div>
     <footer class="page-footer col s12 l12 m12 black">
         <div class="container">
@@ -547,11 +533,11 @@
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
         </div>
     </div>
-
 </footer>
-
-    <script  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="js/index.js"></script>   
 </body>
+<script  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/usuario.js"></script> 
+<script src="js/index.js"></script> 
+<script type="text/javascript" charset="utf-8" async defer> 
 </html>

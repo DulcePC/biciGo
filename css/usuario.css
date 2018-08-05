@@ -1,4 +1,14 @@
 
+body{
+    background-image: url('../img/bici6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.nav{
+    margin-bottom:100px;
+    background-color:transparent
+}
 .sidenav{
     background-color: black;
 }
@@ -39,4 +49,52 @@
 }
 .buttom-menu{
     z-index: 1;
+}
+.icono_menu{
+    color:black;
+    font-size: 30px;
+    background-color: white;
+}
+.public_icon{
+    padding: 2em;
+    text-align: center;
+    background-color:black;
+}
+.icon{
+    font-size:100px;
+    color:#FDAB00;
+}
+@media(max-width:360px){
+    .public_icon{
+        padding: 0;
+    }
+    .icon{
+        font-size: 50px;
+    }
+}
+@media(max-width:375px){
+    .public_icon{
+        padding: 0;
+    }
+    .icon{
+        font-size: 50px;
+    }
+}
+.public_icon a{
+    color:white;
+    font-weight: bold;
+
+}
+#publicaciones h1{
+ text-align: center;
+ font-size:35px;
+ font-weight: bold;
+ color:white;
+
+}
+table{
+    background-color: transparent;
+}
+table td,th,thead,tbody{
+    color:white;
 }
