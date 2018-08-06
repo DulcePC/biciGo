@@ -15,8 +15,8 @@
     <div class="submenu">
        <div class="container">
            <ul class="col l12">
-               <li class="col s3"><a class="modal-trigger" href="#entrar"><i class="material-icons tiny">lock_open</i>Entra</a></li>
-               <li class="col s3"><a class="modal-trigger" href="#registrate"><i class="material-icons  tiny">lock_open</i>Registrate<a></li>
+               <li class="col s3"><a class="modal-trigger" href="login.php"><i class="material-icons tiny">lock_open</i>Entra</a></li>
+               <li class="col s3"><a class="modal-trigger" href="registrate.php"><i class="material-icons  tiny">lock_open</i>Registrate<a></li>
                <li class="col s3"><a><i class="material-icons tiny">mail</i>bicigo@gmail.com</a></li>
            </ul>
        </div>
@@ -336,7 +336,7 @@
     <div class="parallax-container">
       <div class="parallax"><img src="img/bici10.jpg"></div>
     </div>
-        <div class="carousel carousel-slider center " data-indicators="true">
+    <div class="carousel carousel-slider center" data-indicators="true">
             <div class="caroussoel-fixed-item center middle-indicator">
             </div>
             <div class="carousel-item carousel-color" href="#one!">
@@ -407,137 +407,12 @@
             </div>
         </div> 
     </div>  
-    <!--MODALS!-->
-    <div id="entrar" class="modal">
-        <div class="modal-content">
-            <h4>Accede</h4>
-            <div class="row">
-                <div class="col l7 s12 m7">
-                    <form method="post" class="col l12 s12">
-                        <div class="input-field col l12 s12 m12">
-                            <input placeholder="Usuario" id="first_name" type="text" class="validate">
-                            <!-- <label for="first_name">Usuario</label> -->
-                        </div>
-                        <div class="input-field col l12 s12 m12">
-                            <input placeholder="Clave" id="first_name" type="text" class="validate">
-                            <!-- <label for="first_name">Clave</label> -->
-                        </div>
-                        <a class="btn entra-btn">Entra</a>
-                    </form>
-                    <div class="row">
-                        <div class="col l6 social-nav model-3d-0 ">
-                            <div class="col l4">
-                                <a href="#!" class="facebook">
-                                    <div class="front">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </div>
-                                    <div class="back">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col l4">
-                                <a href="#!" class="twitter">
-                                    <div class="front">
-                                        <i class="fab fa-twitter"></i>
-                                    </div>
-                                    <div class="back">
-                                        <i class="fab fa-twitter"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col l4">
-                                <a href="#!" class="instagram">
-                                    <div class="front">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
-                                    <div class="back">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l5  s12 m5 black">
-                    <img src="img/bici5.jpg" class="imgEntra">
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
-        </div>
-    </div>
-    <div id="registrate" class="modal">
-        <div class="modal-content">
-            <h4>Registrate</h4>
-            <div class="row">
-                <div class="col l7 s12 m7">
-                    <form method="post" class="col l12 s12">
-                        <div class="input-field col l12 s12 m12">
-                            <input placeholder="Nombre" id="first_name" type="text" class="validate">
-                            <!-- <label for="first_name">Nombre</label> -->
-                        </div>
-                        <div class="input-field col l12 s12 m12">
-                            <input placeholder="Usuario" id="first_name" type="text" class="validate">
-                            <!-- <label for="first_name">Usuario</label> -->
-                        </div>
-                        <div class="input-field col l12 s12 m12">
-                            <input placeholder="Clave" id="first_name" type="text" class="validate">
-                            <!-- <label for="first_name">Clave</label> -->
-                        </div>
-                        <a class="btn entra-btn">Registrarte</a>
-                    </form>
-                    <div class="row">
-                        <div class="col l6 social-nav model-3d-0 ">
-                            <div class="col l4">
-                                <a href="#!" class="facebook">
-                                    <div class="front">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </div>
-                                    <div class="back">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col l4">
-                                <a href="#!" class="twitter">
-                                    <div class="front">
-                                        <i class="fab fa-twitter"></i>
-                                    </div>
-                                    <div class="back">
-                                        <i class="fab fa-twitter"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col l4">
-                                <a href="#!" class="instagram">
-                                    <div class="front">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
-                                    <div class="back">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="col l12">Al darle click a registrarte estas aceptando nuestros terminos</p>
-                </div>
-                <div class="col l5  s12 m5 black">
-                    <img src="img/bici5.jpg" class="imgEntra">
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Salir</a>
-        </div>
-    </div>
 </footer>
 </body>
 <script  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="js/usuario.js"></script> 
 <script src="js/index.js"></script> 
-<script type="text/javascript" charset="utf-8" async defer> 
+<script type="text/javascript" charset="utf-8" async defer/> 
+</script>
 </html>
