@@ -26,6 +26,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
        }
        $pass = hash('sha512', $pass);
 
+
+    }
+    if($errores == ''){
+        $statement = $conexion->prepare('INSERT INTO usuario (id,nombre,usuario,clave)VALUES (null, :nombre, :usuario, :pass)');
+        $statement->execute(array(
+        ':nombre'  => $nombre, 
+        ':usuario' => $usuario, 
+        ':pass'    => $pass));
+        header('location:login.php');
     }
 }
 

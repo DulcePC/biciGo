@@ -1,7 +1,31 @@
-<?php
-session_start();
+<?php session_start();
 if(isset($_SESSION['usuario'])){
     header('location:usuario.php');
+}
+    $errores = '';
+if($_SERVER['REQUEST_METHOD']=='POST'){
+    $usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
+    $pass = $_POST['pass'];
+    $pass = hash('sha512', $pass);
+
+    try{
+        $conexion = new PDO('mysql:host=localhost;dbname=bicigo','root','');
+    }catch(PDOException $e){
+        echo "Error: ".$e->getMessage();
+    }
+
+    $statement = $conexion->prepare('SELECT * FROM usuario WHERE usuario = :usuario AND clave = :pass');
+    $statement->execute(array(
+        ':usuario' => $usuario,
+        ':pass' => $pass
+    ));
+    $resultado = $statement->fetch();
+    if($resultado != false){
+        $_SESSION['usuario'] = $usuario;
+        header('location:usuario.php');
+    }else{
+        $errores .= '<li>Datos incorrectos</li>';
+    }
 }
 
 ?>
@@ -21,7 +45,7 @@ if(isset($_SESSION['usuario'])){
 <body>
     <div class="container registro">
         <div class="row">
-            <h4>Registrate</h4>
+            <h4>Accede</h4>
             <div class="l7 m12 s12">
                 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="col l7 s12" name="login">
                     <div class="input-field col l12 s12 m12">
@@ -33,6 +57,13 @@ if(isset($_SESSION['usuario'])){
                     <div class="col l12 m12 s12">
                         <a class="btn entra-btn btn-small right" onclick="login.submit()">Entra</a>
                     </div>
+                    <?php if(!empty($errores)): ?>
+                        <div class"error">
+                            <ul class="errorsito">
+                                <?php echo $errores; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
                 </form>
             </div>
             <div class="col l5 m5 black hide-on-med-and-down">

@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/materialize.css" />
-    <link rel="stylesheet" href="../css/usuario.css" />
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/usuario.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
 </head>
 <body>
@@ -20,7 +20,7 @@
                 <div class="background">
                     <!-- <img src="images/office.jpg"> -->
                 </div>
-                <a href="#user"><img class="circle" src="../img/bici10.jpg"></a>
+                <a href="#user"><img class="circle" src="img/bici10.jpg"></a>
                 <a href="#name"><span class="white-text name">John Doe</span></a>
                 <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </li>
-        <li class="cerrarmargin"><a class="waves-effect" href="#!">Cerrar seccion</a></li>
+        <li class="cerrarmargin"><a class="waves-effect" href="cerrar.php">Cerrar seccion</a></li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger buttom-menu"><i class="material-icons icono_menu">menu</i></a>
     </div>
@@ -125,7 +125,7 @@
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-<script src="../js/usuario.js"></script> 
+<script src="js/usuario.js"></script> 
 <script src="js/index.js"></script> 
 <script type="text/javascript" charset="utf-8" async defer> 
 
