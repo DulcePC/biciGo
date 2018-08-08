@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <div class="col l12 nav">
+    <div class="col l12 s12 m12 nav">
         <ul id="slide-out" class="sidenav collapsible">
         <li>
             <div class="user-view">
@@ -51,37 +51,52 @@
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger buttom-menu"><i class="material-icons icono_menu">menu</i></a>
     </div>
-    <section id="agregar_contenido">
+    <section id="agregar_contenido col l12 s12 m12">
             <div class="container">
                 <div class="row">
                     <div class="col l4 s4 m4">
                         <div class="public_icon">
-                        <i class="fas fa-plus-circle icon"></i>
+                        <a class="lento" onclick="funcionBici()">
+                            <i class="fas fa-plus-circle icon"></i>
                             <br>
-                            <a href="#">Publicar una bicleta</a>
+                            <p class="flow-text">Publica una bicicleta</p>
+                        </a>
+                        </div> 
+                    </div>
+                    <div class="col l4 s4 m4">
+                        <div class="public_icon">
+                            <a onclick="funcionPieza()">
+                                <i class="fas fa-plus-circle icon"></i>
+                                <br>
+                                <p class="flow-text">Publica una pieza</p>
+                            </a>
                         </div>
                     </div>
                     <div class="col l4 s4 m4">
                         <div class="public_icon">
-                            <i class="fas fa-plus-circle icon"></i>
-                            <br>
-                            <a href="#">Publicar una pieza</a>
-                        </div>
-                    </div>
-                    <div class="col l4 s4 m4">
-                        <div class="public_icon">
-                            <i class="fas fa-plus-circle icon"></i>
-                            <br>
-                            <a href="#">Publicar un accesorio</a>
+                            <a onclick="funcionAccesorio()">
+                                <i class="fas fa-plus-circle icon"></i>
+                                <br>
+                                <p class="flow-text">Publica un accesorio</p>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="bicicleta" style="display:none;">
+                <?php require('view/FormBicicleta.php'); ?>
+            </div> 
+            <div id="pieza" style="display:none;">
+                <?php require('view/FormPiezas.php'); ?>
+            </div>
+            <div id="accesorio" style="display:none;">
+                <?php require('view/FormAccesorio.php'); ?>
             </div>
     </section>
     <section id="publicaciones">
         <h1 class="flow-text">Mis publicaciones</h1> 
         <div class="container">
-            <table class="striped">
+            <table class="striped responsive-table">
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -119,11 +134,12 @@
                 </tbody>
             </table>
         </div>
-                <!-- traer todas las publicaciones del usuario
-                -todo esto lo vamos a traer en una table.(editar, vea(modal));-->
+       <!-- traer todas las publicaciones del usuario
+       -todo esto lo vamos a traer en una table.(editar, vea(modal));-->
     </section>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="js/usuario.js"></script> 
 <script src="js/index.js"></script> 

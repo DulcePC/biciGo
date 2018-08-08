@@ -1,0 +1,26 @@
+.contenedor{
+   /* background-color:white; */
+    background-image: url('../img/bici5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color:  rgba(66, 66, 66, 0.5);
+    border-color: transparent;
+    border-radius: 0;
+}
+.label{
+    color: black;
+}
+.input-field option{
+    color:black;
+}
+span{
+    color:white;
+}
+.input-field ::placeholder{
+    color:white;
+    font-weight: bold;
+}
+textarea{
+    color:white;
+    font-weight: bold;
+}
