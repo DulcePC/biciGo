@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Formulario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <link rel="stylesheet" href="css/materialize.css" />
     <link rel="stylesheet" href="css/formBicicleta.css"/>
 </head>
@@ -14,7 +16,7 @@
         <div class="container contenedor">
             <div class="row">
                 <div class=" col l12 s12 m12">
-                    <form method="post">
+                    <form method="post" method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                         <div class="input-field col s12 m12 l12">
                             <input
                                 placeholder="Titulo de la pieza"
@@ -56,14 +58,16 @@
                 <div class="col l12 s12 m12">
                     <div class="file-field input-field col l12 s12 m12">
                         <div class="btn">
-                            <span>File</span>
-                            <input type="file">
+                            <span>Foto</span>
+                            <input type="file" name="fileInput">
                         </div>
                         <div class="file-path-wrapper">
                             <input class="file-path validate" type="text">
                         </div>
                     </div>
-                    <a class="btn green btn-small right"><i class="material-icons right">send</i>Publicar</a>
+                    <input class="btn green btn-small right submit" type="submit" value="Subir publicacion" name="submit" >
+                    <a href="usuario.php" class="red btn-small btn left">Salir</a>
+
                 </div>
             </div>
         </div>

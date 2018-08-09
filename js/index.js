@@ -16,6 +16,7 @@
 //         topLayer.style.width = e.clientX + skew + delta + 'px';
 //     });
 // });
+
 $(document).ready(function(){
     $('.parallax').parallax();
     $(".modal").modal();
@@ -29,5 +30,16 @@ $(document).ready(function(){
        $('.carousel').carousel('next');
        setTimeout(autoplay, 3000);
     }
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+    
+        var target = this.hash;
+        var $target = $(target);
+        $('html, body').animate({
+            'scrollTop': $target.offset().top,
+    
+        }, 4000, 'swing');
+    
+    });
 
 });

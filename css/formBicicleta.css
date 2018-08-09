@@ -1,11 +1,11 @@
 .contenedor{
-   /* background-color:white; */
-    background-image: url('../img/bici5.jpg');
+    /* background-image: url('../img/bici5.jpg');
     background-size: cover;
-    background-repeat: no-repeat; 
-    background-color:  rgba(66, 66, 66, 0.5);
-    border-color: transparent;
+    background-repeat: no-repeat;  */
+    background-color:transparent;
+    border: 1px solid white;
     border-radius: 0;
+    background-color:  rgba(66, 66, 66, 0.5);
 }
 .label{
     color: black;
@@ -23,4 +23,24 @@ span{
 textarea{
     color:white;
     font-weight: bold;
+}
+input[type=text]{
+    color:white;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+body{
+    background-image: url('../img/bici6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2{
+    color:black;
+    text-align: center;
+}
+.submit{
+    margin-bottom: 10px;
+}
+.textarea{
+    color:white;
 }

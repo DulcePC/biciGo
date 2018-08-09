@@ -2,14 +2,14 @@
 #pieza{}
 
 body{
-    /* background-image: url('../img/bici6.jpg');
+    background-image: url('../img/back.jpeg');
     background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: black;
+    background-size: cover;
+   
 }
 .nav{
     margin-bottom:100px;
-    background-color:transparent
+    background-color:transparent;
 }
 .sidenav{
     background-color: black;
@@ -60,11 +60,15 @@ body{
 .public_icon{
     padding: 2em;
     text-align: center;
-    background-color:black;
+    background-color:white;
+}
+.public_icon p{
+    color:black;
 }
 .icon{
     font-size:100px;
-    color:#FDAB00;
+    color:#8bc34a;
+    margin-top:15px;
 }
 @media(max-width:360px){
     .public_icon{
@@ -96,6 +100,8 @@ body{
 }
 table{
     background-color: transparent;
+    background-color:  rgba(66, 66, 66, 0.5);
+
 }
 table td,th,thead,tbody{
     color:white;

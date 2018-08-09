@@ -48,6 +48,10 @@ ul{
         padding:7px 0;
         border-right: 0px solid;
     }
+    .btn, .btn-large, .btn-small,
+    .btn-flat{
+        padding: 0px 5px;
+    }
 }
 .navprincipal {
     height: 37px;
@@ -72,7 +76,7 @@ ul{
     color:black;
     padding: 0 17px;
     font-weight: bold;
-
+    margin-right: 3px;
 }
 .layer{
     position: absolute;
@@ -114,7 +118,8 @@ ul{
     z-index: 1;
 }
 .bottom h1{
-    color:white;
+    color:#ffee58;
+    font-weight: bold;
 }
 .top{
     color:#222;
@@ -416,8 +421,7 @@ span{
 }
 /* overlay */
 .equipo{
-    background-color: grey;
-
+    background-color:#f0f4c3;
 }
 .equipo .row2{
     margin-left: auto;
@@ -431,7 +435,7 @@ span{
     position: relative;
     width: 100%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .dulceImg{
     display: block;

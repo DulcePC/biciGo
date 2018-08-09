@@ -1,3 +1,24 @@
+<?php
+    require 'funciones.php';
+    $conexion = conexion ('bicigo', 'root','');
+    if(!$conexion){
+        die();
+    }
+    //paginacion para nuestro adm
+    $pagina = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+    $postPorPagina = 6; //cuanto post queremos mostrar por pagina
+    // para saber desde donde vamos a traer los articulos, $inicio va a atraer desde el post numero 5, 5 articulos
+    $inicio = ($pagina > 1 ) ? ($pagina * $postPorPagina - $postPorPagina) : 0;
+    //que nos traiga todos los articulos de la tabla con un limite porque si no estariamos trayendo todos, 
+    $articulos = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM bicicleta ORDER BY id DESC LIMIT $inicio, $postPorPagina");
+    $articulos->execute();
+    $articulos = $articulos->fetchAll();
+    $totalArticulos = $conexion->query("select FOUND_ROWS() as total");
+    $totalArticulos = $totalArticulos->fetch()['total'];
+    //echo $totalArticulos; //(nos traera el total de articylos que tenemos en la base de datos)
+    $numeroPaginas = ceil($totalArticulos / $postPorPagina);// se le pone ceil para redondear hacia arriba si es que hay decimales  el numero de paginas es igual a todos los articulos de la base de das ppor los porst que queremos mostrar en la pagna
+    //echo $numeroPaginas; //(para saber el numero de paginas que tenemos (osea dependiendo los articulos))
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,11 +46,11 @@
         <div class="nav-wrapper">
             <a href="#" class="brand-logo"><span id="b">B</span>iciGo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Inicio</a></li>
-                <li><a href="badges.html">Categorias</a></li>
-                <li><a href="collapsible.html">Nosotros</a></li>
-                <li><a href="collapsible.html">Noticias</a></li>
-                <li><a href="collapsible.html">Eventos</a></li>
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#eventos">Eventos</a></li>
             </ul>
         </div>
     </nav>
@@ -38,7 +59,7 @@
             <div class="content-wrap">
                 <div class="content-body col l12">
                     <h1>Piezas</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>Encuentra las piezas faltantes para mejorar tu bicicletas! </p>
                     <a class="btn btn-small orange col s3">Categorias</a>
                 </div>
                 <img src="img/bici2.jpg">
@@ -48,105 +69,61 @@
             <div class="content-wrap">
                 <div class="content-body ">
                     <h1>BiciGo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <a class="btn btn-small green">Subscribete</a>
+                    <p>Subscribete para que puedas publicar tu bicicleta hoy mismo!</p>
+                    <a href="registrate.php" class="btn btn-small green col s3">Subscribete</a>
                 </div>
                 <img src="img/bici1.jpeg">
             </div>
         </div>
         <div class="handle"></div>
     </section>
-    <div class="ventas">
+    <div class="ventas" id="ventas">
         <div class="container titulo">
             <h3>Ventas</h3>
             <h6>Encuentra tu bicicleta ahora</h6>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col l4  m4 s12">
-                        <div class="card">
-                            <div class="card-image">
-                            <img src="img/bici2.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms"><i class="material-icons">add</i></a>
-                            </div>
-                            <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="col l4  m4 s12">
-                        <div class="card">
-                            <div class="card-image">
-                            <img src="img/bici3.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms"><i class="material-icons">add</i></a>
-                            </div>
-                            <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="col l4  m4 s12">
-                        <div class="card">
-                            <div class="card-image">
-                            <img src="img/logo.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms"><i class="material-icons">add</i></a>
-                            </div>
-                            <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                </div>            
-            </div>
-            <div class="row">
-                <div class="col l4  m4 s12">
-                        <div class="card">
-                            <div class="card-image">
-                            <img src="img/bici2.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms"><i class="material-icons">add</i></a>
-                            </div>
-                            <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="col l4  m4 s12">
-                        <div class="card ">
-                            <div class="card-image">
-                            <img src="img/bici3.jpg">
-                            <span class="card-title">what</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms"><i class="material-icons">add</i></a>
-                            </div>
-                            <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="col l4 m4 s12">
-                    <div class="card">
-                            <div class="card-image">
-                            <img src="img/logo.jpg">
-                            <span class="card-title">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms"><i class="material-icons">add</i></a>
-                            </div>
-                            <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        <!-- articulos es el nombre con lo que sacamos la paginacion -->
+                <?php foreach($articulos as $foto): ?>
+                    <div class="col l4  m4 s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="fotos/<?php echo $foto['imagen'] ?>" alt="">
+                                    <span class="card-title"><?php echo $foto['titulo'] ?></span>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms"><i class="material-icons">add</i></a>
+                                    </div>
+                                    <div class="card-content">
+                                    <p><?php echo $foto['descripcion'] ?></p>
+                                    </div>
                             </div>
                     </div>
-                </div>            
+                <?php endforeach; ?>
             </div>
             <div class="row">
                     <ul class="pagination right">
-                        <li class="disabled izquierda"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                        <li class="active"><a href="#!">1</a></li>
-                        <li class="waves-effect"><a href="#!">2</a></li>
-                        <li class="waves-effect"><a href="#!">3</a></li>
-                        <li class="waves-effect"><a href="#!">4</a></li>
-                        <li class="waves-effect"><a href="#!">5</a></li>
-                        <li class="waves-effect derecha"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        <?php if($pagina == 1): ?><!--esto es para deshabilitar el boton si tenemos una sola pagina-->
+                            <li class='disabled'><a href="#ventas"><i class='material-icons'>chevron_left</i></a></li>
+                        <?php else: ?>
+                            <li><a href="?pagina=<?php echo $pagina -1 ?>"><i class="material-icons">chevron_left</i></a></li>
+                        <?php endif; ?>
+                        <?php
+                            //ejecutamos el ciclo para mostra las paginas
+                            for($i=1; $i <=$numeroPaginas; $i++){
+                                if($pagina == $i){
+                                    echo "<li class='active'><a href='?pagina=$i'>$i</a></li>";
+                                }else{
+                                    echo "<li class='waves-effect'><a href='?pagina=$i'>$i</a></li>";
+                                }
+                            } //creando una pagina por cada una de ellas
+                        ?>
+                        <?php 
+                        //establecemos que nuestro boton de siguiente se habilite
+                        if($pagina == $numeroPaginas): ?><!--esto es para deshabilitar el boton si tenemos una sola pagina-->
+                            <li class='disabled'><a href="#ventas"><i class='material-icons'>chevron_right</i></a></li>
+                        <?php else: ?>
+                            <li><a href="?pagina=<?php echo $pagina + 1 ?>"><i class="material-icons">chevron_right</i></a></li>
+                        <?php endif; ?>
                     </ul>
             </div>
         </div>
@@ -154,7 +131,7 @@
     <div class="parallax-container">
       <div class="parallax"><img src="img/bici8.jpg"></div>
     </div>
-    <section class="nosotros">
+    <section class="nosotros" id="nosotros">
         <div class="container">
             <div class="titulo">
                 <h3>Nosotros</h3>
@@ -180,7 +157,7 @@
       <div class="parallax"><img src="img/bici10.jpg"></div>
     </div>
     <section class="actividades ">
-        <div class="noticias">
+        <div class="noticias" id="noticias">
             <div class="titulo">
                 <h4>Noticias</h4>
             </div>
@@ -219,7 +196,7 @@
                 </div>
             </div>
         </div>
-        <div class="eventos">
+        <div class="eventos" id="eventos">
             <div class="titulo">
                 <h4>Eventos</h4>
             </div>
@@ -268,7 +245,7 @@
             <div class="container">
                 <div class="row row2">
                     <div class="col l6 s6 m6">
-                        <div class="dulce">
+                        <div class="dulce z-depth-5">
                             <img src="img/dulce1.jpg" class="dulceImg">
                             <div class="overlay">
                                 <div class="contacto">
@@ -299,11 +276,11 @@
                         </div>
                     </div>
                     <div class="col l6 s6 m6">
-                        <div class="dulce">
+                        <div class="dulce z-depth-5">
                             <img src="img/oliver1.jpg" class="dulceImg">
                             <div class="overlay">
                                 <div class="contacto">
-                                    <h5>Dulce Perez</h5>
+                                    <h5>Oliver Reyes</h5>
                                     <h6>Web Designer</h6>
                                     <div class="col l6 s6 m6 social-nav model-3d-0 ">
                                         <a href="#!" class="facebook">
@@ -341,15 +318,15 @@
             </div>
             <div class="carousel-item carousel-color" href="#one!">
                 <div class="container">
-                    <div class="descrip_testimonial white whites">
+                    <div class="descrip_testimonial white whites z-depth-5">
                         <h2>Prof. Juan Martinez</h2>
-                        <p>Estabas buscando la forma de comprar bicicletas para mis hijos y con esta pagina fue totalmente sencillo encontrarlos.</p>
+                        <p>Comprar bicicletas para mis hijos en esta pagina fue totalmente sencillo.</p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item carousel-color" href="#two!">
                 <div class="container">
-                    <div class="descrip_testimonial black blacks">
+                    <div class="descrip_testimonial black blacks z-depth-5">
                         <h2>Franklyn O. Perez</h2>
                         <p>Puedo vender todas mis piezas de bicicletas por esta pagina facilmente!</p>
                     </div>
@@ -357,17 +334,9 @@
             </div>
             <div class="carousel-item carousel-color" href="#three!">
                 <div class="container">
-                    <div class="descrip_testimonial white whites">
+                    <div class="descrip_testimonial grey lighten-4 whites z-depth-5">
                         <h2>Hasebe Yo</h2>
-                        <p>Una pagina totalmente actualizada para encontrar todos los eventos relacionados al ciclismo!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item carousel-color" href="#four!">
-                <div class="container">
-                    <div class="descrip_testimonial black blacks">
-                        <h2>Toño Rosario</h2>
-                        <p>Una website totalmente segura</p>
+                        <p>Actualizada para encontrar todos los eventos relacionados al ciclismo!</p>
                     </div>
                 </div>
             </div>

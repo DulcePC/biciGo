@@ -14,6 +14,7 @@
 </head>
 <body>
     <div class="col l12 s12 m12 nav">
+        <div class="right white"><a href="index.php">Volver a la principal</a></div>
         <ul id="slide-out" class="sidenav collapsible">
         <li>
             <div class="user-view">
@@ -29,13 +30,13 @@
             <div class="collapsible-header"><i class="fas fa-plus-circle"></i>Publicar</div>
             <div class="collapsible-body">
                 <div class="publicar">
-                    <span>Publica una bicicleta</span><a class="btn btn-small publicar_boton right">ahora</a>
+                    <span>Publica una bicicleta</span><a href="formularioB.php" class="btn btn-small publicar_boton right">ahora</a>
                 </div>
                 <div class="publicar">
-                    <span>Publica un accesorio</span><a class="btn btn-small publicar_boton right">ahora</a>
+                    <span>Publica un accesorio</span><a href="formularioA.php" class="btn btn-small publicar_boton right">ahora</a>
                 </div>
                 <div class="publicar">
-                    <span>Publica una pieza</span><a class="btn btn-small publicar_boton right">ahora</a>
+                    <span>Publica una pieza</span><a  href="formularioP.php" class="btn btn-small publicar_boton right">ahora</a>
                 </div>
             </div>
         </li>
@@ -55,43 +56,35 @@
             <div class="container">
                 <div class="row">
                     <div class="col l4 s4 m4">
-                        <div class="public_icon">
-                        <a class="lento" onclick="funcionBici()">
-                            <i class="fas fa-plus-circle icon"></i>
+                        <div class="public_icon z-depth-5">
+                        <a  href="formularioB.php">
+                            <i class="fas fa-plus-circle icon "></i>
                             <br>
-                            <p class="flow-text">Publica una bicicleta</p>
+                            <p class="flow-text">Bicicleta</p>
                         </a>
                         </div> 
                     </div>
                     <div class="col l4 s4 m4">
-                        <div class="public_icon">
-                            <a onclick="funcionPieza()">
+                        <div class="public_icon z-depth-5">
+                            <a href="formularioP.php">
                                 <i class="fas fa-plus-circle icon"></i>
                                 <br>
-                                <p class="flow-text">Publica una pieza</p>
+                                <p class="flow-text">Pieza</p>
                             </a>
                         </div>
                     </div>
                     <div class="col l4 s4 m4">
-                        <div class="public_icon">
-                            <a onclick="funcionAccesorio()">
+                        <div class="public_icon z-depth-5">
+                            <a href="formularioA.php">
                                 <i class="fas fa-plus-circle icon"></i>
                                 <br>
-                                <p class="flow-text">Publica un accesorio</p>
+                                <p class="flow-text">Accesorio</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="bicicleta" style="display:none;">
-                <?php require('view/FormBicicleta.php'); ?>
-            </div> 
-            <div id="pieza" style="display:none;">
-                <?php require('view/FormPiezas.php'); ?>
-            </div>
-            <div id="accesorio" style="display:none;">
-                <?php require('view/FormAccesorio.php'); ?>
-            </div>
+          
     </section>
     <section id="publicaciones">
         <h1 class="flow-text">Mis publicaciones</h1> 
