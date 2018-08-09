@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+.accesorio,.piezas,.bicicletas{
+    height: 200px;
+    padding: 5em;
+    margin-bottom: 20px;
+}
+.span-accesorio{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+}
+.accesorio{
+    margin-top:20px;
+    background-image: url('../img/bici10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bicicletas{
+    background-image: url('../img/bici10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.piezas{
+    background-image: url('../img/bici10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.accesorio:hover{ 
+    border: 2px solid white;
+    color:red;
+}
+.bicicletas:hover{ 
+    border: 2px solid white;
+    color:red;
+}
+
+.piezas:hover{ 
+    border: 2px solid white;
+    color:red;
+}

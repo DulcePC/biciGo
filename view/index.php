@@ -47,7 +47,7 @@
             <a href="#" class="brand-logo"><span id="b">B</span>iciGo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="#">Categorias</a></li>
+                <li><a href="categoria.php">Categorias</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#noticias">Noticias</a></li>
                 <li><a href="#eventos">Eventos</a></li>

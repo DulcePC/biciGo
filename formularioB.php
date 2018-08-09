@@ -8,9 +8,9 @@ if(isset($_SESSION['usuario'])){
 require 'funciones.php';
 $conexion = conexion('bicigo', 'root', '');
 
-if (!$conexion) {
-	die();
-}
+// if (!$conexion) {
+// 	die();
+// }
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_FILES)) {
     $check = @getimagesize($_FILES['foto']['tmp_name']);
     if ($check !== false) {
@@ -21,9 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_FILES)) {
         $statement = $conexion->prepare('
 			INSERT INTO bicicleta (titulo, marca, precio, estado, telefono , provincia, descripcion,imagen)
 			 VALUES (:titulo, :marca, :precio,:estado, :telefono , :provincia, :descripcion, :imagen)
-		');
-
-
+        ');
+        
         $statement->execute(array(
             ':titulo' => $_POST['titulo'],
             ':marca' =>  $_POST['marca'],
@@ -34,11 +33,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_FILES)) {
             ':descripcion' => $_POST['descripcion'],
             ':imagen' => $_FILES['foto']['name']
         ));
-            header('location: index.php');
+
+         header('location: index.php');
     }else{
         $error = "El archivo no es una imagen o es muy pesado";
     }
 }
 
-//require 'view/FormBicicleta.php';
+
 ?>

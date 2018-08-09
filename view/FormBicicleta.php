@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/materialize.css"/>
         <link rel="stylesheet" href="css/formBicicleta.css"/>
+        <link rel="stylesheet" href="css/index.css" />
+
     </head>
     <body>
 

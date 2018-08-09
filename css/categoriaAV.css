@@ -1,0 +1,12 @@
+body{
+    background-image: url('../img/backfoto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor{
+    margin-top:100px;
+    background-color:transparent;
+    border-radius: 0;
+    background-color:  rgba(66, 66, 66, 0.5);
+
+}

@@ -22,11 +22,11 @@
                             <div class="descrip">
                                 <h3 class="titulo_descrip"><?php echo $foto['titulo']; ?>ss</h3>
                                 <ul>
-                                    <li>Marca:<?php echo $foto['marca']?></li>
-                                    <li>Precio:<?php echo $foto['precio']?></li>
-                                    <li>Estado:<?php echo $foto['estado']?></li>
-                                    <li>Telefono:<?php echo $foto['telefono']?></li>
-                                    <li>Provincia:<?php echo $foto['provincia']?></li>
+                                    <li>Marca: <?php echo $foto['marca']?></li>
+                                    <li>Precio: <?php echo $foto['precio']?></li>
+                                    <li>Estado: <?php echo $foto['estado']?></li>
+                                    <li>Telefono: <?php echo $foto['telefono']?></li>
+                                    <li>Provincia: <?php echo $foto['provincia']?></li>
                                 </ul>
                                 <p>Descripcion:<?php echo $foto['descripcion']?></p>
                             </div>
