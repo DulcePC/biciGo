@@ -40,5 +40,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_FILES)) {
     }
 }
 
-require 'view/FormBicicleta.php';
+//require 'view/FormBicicleta.php';
 ?>

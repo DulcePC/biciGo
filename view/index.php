@@ -91,10 +91,7 @@
                                 <div class="card-image">
                                     <img src="fotos/<?php echo $foto['imagen'] ?>" alt="">
                                     <span class="card-title"><?php echo $foto['titulo'] ?></span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms"><i class="material-icons">add</i></a>
-                                    </div>
-                                    <div class="card-content">
-                                    <p><?php echo $foto['descripcion'] ?></p>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms" href="foto.php?id=<?php echo $foto['id']; ?>"><i class="material-icons">add</i></a>
                                     </div>
                             </div>
                     </div>

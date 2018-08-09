@@ -25,19 +25,8 @@
                         <div class="input-field col s12 m12 l12">
                             <input placeholder="Precio" id="precio" name="precio" type="text" data-length="10"/>
                         </div>
-                        <div class="col s12 m5 l5 right">
-                            <p>
-                                <label class="col l6 m6 s6">
-                                    <input name="estado" type="radio"/>
-                                    <span>Nuevo</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label class="col l6 l6 m6 s6">
-                                    <input name="estado" type="radio"/>
-                                    <span>Usado</span>
-                                </label>
-                            </p>
+                        <div class="col s12 m12 l12 right">
+                            <input placeholder="Estado" id="estado" name="estado" type="text" data-length="10"/>
                         </div>
                         <div class="input-field col s12 m12 l12">
                             <input placeholder="Telefono" id="telefono" name="telefono" type="text" data-length="10"/>

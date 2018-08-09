@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url('../img/backfoto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img{
+width: 100%;
+margin-top: 20px;
+}
+#contenedor_universal{
+    background-color:transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    background-color:  rgba(66, 66, 66, 0.5);
+    margin-top: 70px;
+}
+
+.descrip{
+    background-color: white;
+}
+.titulo_descrip{
+    text-align: center;
+    font-size: 15px;
+}
+.descrip ul li{
+    color:black;
+    font-weight: bold;
+}
+.descrip p{
+    text-align: center;
+    color: pink;
+
+}

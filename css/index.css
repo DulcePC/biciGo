@@ -184,7 +184,12 @@ h6{
     height: 230px;
 }
 .card-title{
-    color:#f8bbd0;
+    color:white;
+    background-color:transparent;
+    border-radius: 0;
+    background-color:  rgba(66, 66, 66, 0.5);
+
+    font-weight: bold;
 }
 .card-content{
     background-color:white;

@@ -52,7 +52,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                         <input placeholder="Usuario" id="nick" type="text" name = "usuario" class="validate" >
                     </div>
                     <div class="input-field col l12 s12 m12">
-                        <input placeholder="Clave" id="pass"  type="text" name = "pass" class="validate" >
+                        <input placeholder="Clave" id="pass"  type="password" name = "pass" class="validate" >
                     </div>
                     <div class="col l12 m12 s12">
                         <a class="btn entra-btn btn-small right" onclick="login.submit()">Entra</a>
