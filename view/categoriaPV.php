@@ -44,7 +44,7 @@
     </div>
     <nav class="navprincipal"> 
         <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><span id="b">B</span>iciGo</a>
+                <a href="index.php" class="brand-logo"><span id="b">B</span>iciGo</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="index.php">Inicio</a></li>
                     <li><a class="btn btn-small green" href="categoriaP.php">Publicar</a></li>

@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+
+
+.imgpost{
+    width:100%;
+}
+.fecha{
+    font-weight: bold;
+
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+.descrip_post{
+    margin-top: 20px;
+}

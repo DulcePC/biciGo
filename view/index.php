@@ -60,7 +60,7 @@
                 <div class="content-body col l12">
                     <h1>Piezas</h1>
                     <p>Encuentra las piezas faltantes para mejorar tu bicicletas! </p>
-                    <a class="btn btn-small orange col s3">Categorias</a>
+                    <a href="categoria.php" class="btn btn-small orange col s3">Categorias</a>
                 </div>
                 <img src="img/bici2.jpg">
             </div>
@@ -97,12 +97,14 @@
                     </div>
                 <?php endforeach; ?>
             </div>
+            <br>
+            <br>
             <div class="row">
-                    <ul class="pagination right">
+                    <ul class="pagination center">
                         <?php if($pagina == 1): ?><!--esto es para deshabilitar el boton si tenemos una sola pagina-->
-                            <li class='disabled'><a href="#ventas"><i class='material-icons'>chevron_left</i></a></li>
+                            <li class='disabled izquierda'><a href="#ventas"><i class='material-icons'>chevron_left</i></a></li>
                         <?php else: ?>
-                            <li><a href="?pagina=<?php echo $pagina -1 ?>"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="izquierda"><a href="?pagina=<?php echo $pagina -1 ?>"><i class="material-icons">chevron_left</i></a></li>
                         <?php endif; ?>
                         <?php
                             //ejecutamos el ciclo para mostra las paginas
@@ -117,9 +119,9 @@
                         <?php 
                         //establecemos que nuestro boton de siguiente se habilite
                         if($pagina == $numeroPaginas): ?><!--esto es para deshabilitar el boton si tenemos una sola pagina-->
-                            <li class='disabled'><a href="#ventas"><i class='material-icons'>chevron_right</i></a></li>
+                            <li class='disabled derecha'><a href="#ventas"><i class='material-icons'>chevron_right</i></a></li>
                         <?php else: ?>
-                            <li><a href="?pagina=<?php echo $pagina + 1 ?>"><i class="material-icons">chevron_right</i></a></li>
+                            <li class="derecha"><a href="?pagina=<?php echo $pagina + 1 ?>"><i class="material-icons">chevron_right</i></a></li>
                         <?php endif; ?>
                     </ul>
             </div>
@@ -160,37 +162,28 @@
             </div>
             <div class="container contenedorEventos">
                 <div class="row">
-                    <div class="col l6 m6 s12">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/bici11.jpg">
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Compentencia de EEUU ride<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">Ver mas</a></p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
+                     <?php foreach($posts as $post): ?>
+                        <div class="col l6 m6 s12">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator img_noticias" src="<?php echo RUTA; ?>/img/<?php echo $post['thumb'];  ?>">
+                                    </div>
+                                    <div class="card-content thumb">
+                                        <span class="card-title activator grey-text text-darken-4 titulo_noticia"><?php echo $post['titulo'];?><i class="material-icons right">more_vert</i></span>
+                                        <p class="continuar"><a href="single.php?id=<?php echo $post['id']; ?>">Ver mas</a></p>
+                                    </div>
+                                    <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4"><?php echo $post['titulo'];  ?><i class="material-icons right">close</i></span>
+                                    <p class="fecha"><?php echo fecha($post['fecha']); ?></p>
+                                    <p class="extracto"><?php echo $post['extracto'];  ?></p>
+                                    </div>
+                                </div>
                         </div>
+                    <?php endforeach; ?>
+                    <div class="center">  
+                        <?php require 'paginacion.php'?></p>
                     </div>
-                    <div class="col l6 m6 s12">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/bici11.jpg">
-                            </div>
-                            <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Resultados de biciclismo mundial<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">Ver mas</a></p>
-                            </div>
-                            <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                 </div>
             </div>
         </div>
         <div class="eventos" id="eventos">

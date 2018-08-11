@@ -16,11 +16,11 @@
             <div class="container" id="contenedor">
                 <div class="row">
                         <div class="col l12 m12 s12">
-                            <img src="../../biciGo/fotos/<?php echo $foto['imagen']; ?>" class="img">
+                            <img src="fotos/<?php echo $foto['imagen']; ?>" class="img">
                         </div>
                         <div class="col l12 s12 m12">
                             <div class="descrip">
-                                <h3 class="titulo_descrip"><?php echo $foto['titulo']; ?>ss</h3>
+                                <h3 class="titulo_descrip"><?php echo $foto['titulo']; ?></h3>
                                 <ul>
                                     <li>Marca: <?php echo $foto['marca']?></li>
                                     <li>Precio: <?php echo $foto['precio']?></li>
