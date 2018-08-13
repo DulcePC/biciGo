@@ -45,9 +45,10 @@
     <nav class="navprincipal"> 
         <div class="nav-wrapper">
                 <a href="index.php" class="brand-logo"><span id="b">B</span>iciGo</a>
+                <i class="material-icons right show-on-small">search</i>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="index.php">Inicio</a></li>
-                    <li><a class="btn btn-small green" href="categoriaP.php">Publicar</a></li>
+                    <li><a class="btn btn-small green" href="formularioP.php">Publicar</a></li>
                 </ul>
         </div>
     </nav>
@@ -60,7 +61,7 @@
                         <div class="card-image">
                             <img src="fotos/<?php echo $foto['imagen'] ?>" alt="">
                             <span class="card-title"><?php echo $foto['titulo'] ?></span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms" href="foto.php?id=<?php echo $foto['id']; ?>"><i class="material-icons">add</i></a>
+                            <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms" href="foto_pieza.php?id=<?php echo $foto['id']; ?>"><i class="material-icons">add</i></a>
                         </div>
                     </div>
                 </div>

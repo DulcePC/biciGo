@@ -19,7 +19,7 @@
                 <div class=" col l12 s12 m12">
                     <form method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                         <div class="input-field col s12 m12 l12">
-                            <input placeholder="Titulo de la bicicleta" type="text" name="titulo"/>
+                            <input placeholder="Titulo de la bicicleta" type="text" name="titulo" data-length="10"/>
                         </div>
                         <div class="input-field col s12 m5 l5">
                             <input placeholder="Marca" id="marca" type="text" data-length="10" name="marca"/>

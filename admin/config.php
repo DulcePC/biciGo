@@ -1,5 +1,5 @@
 <?php
-define ('RUTA','http://localhost/biciGo/');
+define ('RUTA','http://localhost/biciGo');
 $db_config = array(
     'basedatos' => 'bicigo',
     'usuario' => 'root',
@@ -7,7 +7,7 @@ $db_config = array(
 );
 $blog_config = array(
     'post_por_pagina' => 2,
-    'carpeta_imagenes' =>'img/'
+    'carpeta_imagenes' =>'fotos/'
 );
 $blog_admin = array(
     'usuario' => 'Carlos',

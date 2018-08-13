@@ -4875,11 +4875,10 @@ small {
 }
 
 .card .card-image .card-title {
-  position: absolute;
   bottom: 0;
   left: 0;
   max-width: 100%;
-  padding: 24px;
+  padding: 5px;
 }
 
 .card .card-content {
@@ -5166,7 +5165,6 @@ small {
   line-height: 36px;
   padding: 0 16px;
   vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .btn.disabled, .disabled.btn-large, .disabled.btn-small,
@@ -6109,7 +6107,7 @@ textarea.materialize-textarea {
   border: none;
   border-bottom: 1px solid white;
   border-radius: 0;
-  outline: none;
+  border-bottom: 1px solid white;
   height: 3rem;
   width: 100%;
   font-size: 16px;
@@ -6324,7 +6322,7 @@ textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.sel
 .select-wrapper.invalid > input.select-dropdown:focus {
   border-bottom: 1px solid white;
   -webkit-box-shadow: 0 1px 0 0 #F44336;
-          box-shadow: 0 1px 0 0 #F44336;
+  border-bottom: 1px solid white;
 }
 
 input:not([type]).valid ~ .helper-text[data-success],
@@ -6597,7 +6595,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
 .input-field input[type=search]:focus:not(.browser-default) {
   background-color: #fff;
   border: 0;
-  -webkit-box-shadow: none;
+  background-color: white;
           box-shadow: none;
   color: #444;
 }

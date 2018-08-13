@@ -1,0 +1,9 @@
+body{
+    background-color:black;
+}
+.contenedorBusqueda{
+    background-color: rgba(48, 49, 49, 0.4);
+    margin-top:30px;
+    margin-bottom:30px;
+    border: 1px solid white;
+}

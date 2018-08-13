@@ -55,5 +55,11 @@ function numero_paginas($post_por_pagina, $conexion){
 	$numero_paginas = ceil($total_post / $post_por_pagina);
 	return $numero_paginas;
 }
+function comprobarSession(){
+	if (!isset($_SESSION['admin'])) {
+		header('Location: ' .  RUTA);
+	}
+}
+
 
 ?>

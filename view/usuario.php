@@ -92,9 +92,10 @@
             <table class="striped responsive-table">
                 <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Item Name</th>
-                    <th>Item Price</th>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>foto</th>
+                    <th>Texto</th>
                 </tr>
                 </thead>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>categorias</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +24,7 @@
     <nav class="navprincipal"> 
         <div class="nav-wrapper">
             <a href="index.php" class="brand-logo"><span id="b">B</span>iciGo</a>
+            <i class="material-icons right show-on-small">search</i>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.php">Inicio</a></li>
             </ul>

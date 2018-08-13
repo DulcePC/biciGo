@@ -8,6 +8,5 @@ $posts = obtener_post($blog_config['post_por_pagina'],$conectar);
 
 
 
-
 require 'view/index.php';
 ?>

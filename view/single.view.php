@@ -35,7 +35,7 @@
             <div class="col l12 s12 m12">
                 <div class="post">
                     <h2 class="titulo_noticia"><?php echo $post['titulo']; ?></h2>
-                        <img src="<?php echo RUTA; ?>/img/<?php echo $post['thumb'];  ?>" class="imgpost">
+                        <img src="<?php echo RUTA; ?>/fotos/<?php echo $post['thumb'];  ?>" class="imgpost">
                     <p class="fecha right"><?php echo fecha($post['fecha']); ?></p>
                 </div>
             </div>

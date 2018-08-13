@@ -14,7 +14,7 @@ if (!$id) {
 	header('Location: index.php');
 }
 
-$statement = $conexion->prepare('SELECT * FROM bicicleta WHERE id = :id');
+$statement = $conexion->prepare('SELECT * FROM pieza WHERE id = :id');
 $statement->execute(array(':id' => $id));
 
 $foto = $statement->fetch();
@@ -24,5 +24,5 @@ $foto = $statement->fetch();
 // }
 
 
-require ('view/fotoV.php')
+require ('view/foto_piezas.php')
 ?>

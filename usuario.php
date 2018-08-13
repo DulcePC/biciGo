@@ -6,4 +6,8 @@ if(isset($_SESSION['usuario'])){
     header('location: login.php');
 }
 
+require 'config.php';
+require '../functions.php';
+
+
 ?>

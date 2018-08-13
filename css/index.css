@@ -54,7 +54,7 @@ ul{
     }
 }
 .navprincipal {
-    height: 37px;
+    height: 41px;
     line-height: 37px;
     background-color: #FDAB00;
 }
@@ -426,7 +426,7 @@ span{
 }
 /* overlay */
 .equipo{
-    background-color:#f0f4c3;
+    background-color:#FDAB00;
 }
 .equipo .row2{
     margin-left: auto;
@@ -520,3 +520,80 @@ span{
         padding: 4em;
     }
 }
+.resp-container {
+    position: relative;
+   width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+    padding-top: 34.25%;
+    margin-top: 4.25%;
+    background-color: black !important;
+    z-index:9999999999;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/*On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1895px) {
+  .resp-container {
+    padding-top: 46.25%;
+    margin-top: 3.25%;
+    }
+}
+/*On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1701px) {
+  .resp-container {
+    padding-top: 45.25%;
+    margin-top: 3.25%;
+    }
+}
+/*On screens that are 1333px or less, set the background color to blue */
+@media screen and (max-width: 1333px) {
+  .resp-container {
+    padding-top: 50.50%;
+    margin-top: 3.25%;
+    }
+}
+@media screen and (max-width: 1180px) {
+  .resp-container {
+    padding-top: 65.25%;
+    margin-top: 3.05%;
+    }
+}
+/*On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 900px) {
+  .resp-container {
+    padding-top: 75.25%;
+    margin-top: 2.25%;
+    }
+}
+/*On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 762px) {
+  .resp-container {
+    padding-top: 85.25%;
+    margin-top: 2.05%;
+    }
+}
+/*On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 672px) {
+  .resp-container {
+    padding-top: 98.25%;
+    margin-top: 1.25%;
+    }
+}
+/* On screens that are 600px or less, set the background color to olive
+@media screen and (max-width: 600px) {
+  .resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    border: 0;
+    }
+} */

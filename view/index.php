@@ -45,6 +45,7 @@
     <nav class="navprincipal"> 
         <div class="nav-wrapper">
             <a href="#" class="brand-logo"><span id="b">B</span>iciGo</a>
+            <a href="buscar.php"><i class="material-icons right show-on-small">search</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="categoria.php">Categorias</a></li>
@@ -82,49 +83,8 @@
             <h3>Ventas</h3>
             <h6>Encuentra tu bicicleta ahora</h6>
         </div>
-        <div class="container">
-            <div class="row">
-                        <!-- articulos es el nombre con lo que sacamos la paginacion -->
-                <?php foreach($articulos as $foto): ?>
-                    <div class="col l4  m4 s12">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="fotos/<?php echo $foto['imagen'] ?>" alt="">
-                                    <span class="card-title"><?php echo $foto['titulo'] ?></span>
-                                    <a class="btn-floating halfway-fab waves-effect waves-light card-butttoms" href="foto.php?id=<?php echo $foto['id']; ?>"><i class="material-icons">add</i></a>
-                                    </div>
-                            </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                    <ul class="pagination center">
-                        <?php if($pagina == 1): ?><!--esto es para deshabilitar el boton si tenemos una sola pagina-->
-                            <li class='disabled izquierda'><a href="#ventas"><i class='material-icons'>chevron_left</i></a></li>
-                        <?php else: ?>
-                            <li class="izquierda"><a href="?pagina=<?php echo $pagina -1 ?>"><i class="material-icons">chevron_left</i></a></li>
-                        <?php endif; ?>
-                        <?php
-                            //ejecutamos el ciclo para mostra las paginas
-                            for($i=1; $i <=$numeroPaginas; $i++){
-                                if($pagina == $i){
-                                    echo "<li class='active'><a href='?pagina=$i'>$i</a></li>";
-                                }else{
-                                    echo "<li class='waves-effect'><a href='?pagina=$i'>$i</a></li>";
-                                }
-                            } //creando una pagina por cada una de ellas
-                        ?>
-                        <?php 
-                        //establecemos que nuestro boton de siguiente se habilite
-                        if($pagina == $numeroPaginas): ?><!--esto es para deshabilitar el boton si tenemos una sola pagina-->
-                            <li class='disabled derecha'><a href="#ventas"><i class='material-icons'>chevron_right</i></a></li>
-                        <?php else: ?>
-                            <li class="derecha"><a href="?pagina=<?php echo $pagina + 1 ?>"><i class="material-icons">chevron_right</i></a></li>
-                        <?php endif; ?>
-                    </ul>
-            </div>
+        <div class="ventas resp-container" id="ventas">
+            <iframe class="resp-iframe" src="ventas.php"></iframe>
         </div>
     </div>
     <div class="parallax-container">
@@ -162,11 +122,11 @@
             </div>
             <div class="container contenedorEventos">
                 <div class="row">
-                     <?php foreach($posts as $post): ?>
+                    <?php foreach($posts as $post): ?>
                         <div class="col l6 m6 s12">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img_noticias" src="<?php echo RUTA; ?>/img/<?php echo $post['thumb'];  ?>">
+                                        <img class="activator img_noticias" src="<?php echo RUTA; ?>/fotos/<?php echo $post['thumb'];  ?>">
                                     </div>
                                     <div class="card-content thumb">
                                         <span class="card-title activator grey-text text-darken-4 titulo_noticia"><?php echo $post['titulo'];?><i class="material-icons right">more_vert</i></span>
@@ -183,7 +143,7 @@
                     <div class="center">  
                         <?php require 'paginacion.php'?></p>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
         <div class="eventos" id="eventos">
