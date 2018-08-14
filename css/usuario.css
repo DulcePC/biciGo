@@ -1,11 +1,10 @@
 #bicileta{}
 #pieza{}
-
 body{
-    background-image: url('../img/back.jpeg');
+    /* background-image: url('../img/back.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
-   
+    background-size: cover; */
+   background:  linear-gradient(to right, white , #26a69a);
 }
 .nav{
     margin-bottom:100px;

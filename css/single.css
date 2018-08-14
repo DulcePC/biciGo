@@ -1,19 +1,29 @@
 body{
-    background-color: white;
+    background: linear-gradient(white,black);
 }
-
-
 .imgpost{
-    width:100%;
+    width:90%;
+    margin: auto;
 }
 .fecha{
     font-weight: bold;
+    color: white;
 
 }
-h2{
+.titulo_single{
     font-size: 30px;
     text-align: center;
+    color:black;
+    font-weight: bold;
+
 }
 .descrip_post{
-    margin-top: 20px;
+text-align: center;
+background-color:  rgba(66, 66, 66, 0.5);
+background-color: transparent;
+border-radius: 10px;
+border: 1px solid white;
+color:white;
+font-size: 15px;
+font-weight: bold;
 }

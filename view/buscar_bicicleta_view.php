@@ -24,7 +24,7 @@
 </div>
 <nav class="navprincipal">
     <div class="nav-wrapper">
-        <form name="busqueda" class="buscar" action="<?php echo RUTA; ?>/buscar_pieza.php" method="get">
+        <form name="busqueda" class="buscar" action="<?php echo RUTA; ?>/buscar_bicicleta.php" method="get">
                 <div class="input-field">
                     <input id="search" type="search" required="required" name="busqueda">
                     <label class="label-icon" for="search">
@@ -38,7 +38,7 @@
 <div class="container contenedorBusqueda">
     <h2><?php echo $titulo; ?></h2>
     <div class="row">
-        <?php foreach($buscarA as $post): ?>
+    <?php foreach($buscarA as $post): ?>
         <div class="col l4  m4 s12 z-depth-5">
             <div class="card">
                 <div class="card-image">
@@ -52,8 +52,8 @@
                 </div>
             </div>
         </div>
-        <?php endforeach; ?>
-    </div>
+    <?php endforeach; ?>
+</div>
 </div>
 </body>
 <script  type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

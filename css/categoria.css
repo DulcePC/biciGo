@@ -1,43 +1,39 @@
 body{
-    background-color: black;
+    background:  linear-gradient(to right, white , black);
 }
-.accesorio,.piezas,.bicicletas{
+.accesorio,.piezas{
     height: 200px;
     padding: 5em;
-    margin-bottom: 18%;
 }
 .span-accesorio{
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+}
+.span-pieza{
+    text-align: center;
+    font-size: 20px;
     font-weight: bold;
     color:white;
 }
+
 .accesorio{
-    margin-top:20px;
-    background-image: url('../img/bici10.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.bicicletas{
-    background-image: url('../img/bici10.jpg');
+    background-image: url('../img/accesorioback.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .piezas{
-    background-image: url('../img/bici10.jpg');
+    background-image: url('../img/piezaback.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .accesorio:hover{ 
     border: 2px solid white;
-    color:red;
 }
 .bicicletas:hover{ 
     border: 2px solid white;
-    color:red;
 }
-
 .piezas:hover{ 
     border: 2px solid white;
-    color:red;
 }

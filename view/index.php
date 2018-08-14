@@ -83,6 +83,13 @@
             <h3>Ventas</h3>
             <h6>Encuentra tu bicicleta ahora</h6>
         </div>
+        <div class="row">
+            <div class="col l6 right">
+                <div class="right" id="buscar">
+                    <a href="buscar_bicicleta.php"><i class="right material-icons show-on-small">search</i></a>
+                </div>
+            </div>
+        </div>
         <div class="ventas resp-container" id="ventas">
             <iframe class="resp-iframe" src="ventas.php"></iframe>
         </div>
@@ -103,8 +110,8 @@
                     <div class="contenedor">
                         <div class="texto">
                             <h3>BiciGo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, beatae at quibusdam nihil ad libero nemo dolore dolorum mollitia, quidem, temporibus eligendi et corporis magni voluptatem! Amet ea voluptatibus suscipit aperiam quod nihil harum repellendus? Quasi earum labore adipisci nobis voluptatem provident dignissimos. Nesciunt ad, aperiam temporibus suscipit facilis maiores.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, beatae at quibusdam nihil ad libero nemo dolore dolorum mollitia, quidem, temporibus eligendi et corporis magni voluptatem! Amet ea voluptatibus suscipit aperiam quod nihil harum repellendus? Quasi earum labore adipisci nobis voluptatem provident dignissimos. Nesciunt ad, aperiam temporibus suscipit facilis maiores.</p>
+                            <p>Bicigo es una pagina inspirada en el mundo del ciclismo, tratando de estar actualizados de la forma mas activa de lo que pasa en esta area en Republica Dominicana.</p>
+                            <p>Tambien podras encontrar de forma rapida y sencilla todos los productos y artefactos relacionados al area, de forma segura para nuestros clientes vivimos cada dia mejorando el proceso de compras.</p>
                         </div>
                         <a href="registrate.php" class="green btn btn-small right" id="suscribete">Suscribete</a>
                     </div>
@@ -196,13 +203,13 @@
                 <div class="row row2">
                     <div class="col l6 s6 m6">
                         <div class="dulce z-depth-5">
-                            <img src="img/dulce1.jpg" class="dulceImg">
+                            <img src="img/dulceImg.jpg" class="dulceImg">
                             <div class="overlay">
                                 <div class="contacto">
                                     <h5>Dulce Perez</h5>
                                     <h6>Web Designer</h6>
                                     <div class="col l6 s6 m6 social-nav model-3d-0 ">
-                                        <a href="#!" class="facebook">
+                                        <a href="https://www.facebook.com/alicia.perez.79219" class="facebook">
                                             <div class="front">
                                                 <i class="fab fa-facebook-f"></i>
                                             </div>
@@ -212,7 +219,7 @@
                                         </a>
                                     </div>
                                     <div class="col l6 s6 m6 social-nav model-3d-0 ">
-                                        <a href="#!" class="linkedin">
+                                        <a href="https://www.linkedin.com/in/dulceperezsoft/" class="linkedin">
                                             <div class="front">
                                                 <i class="fab fa-linkedin-in"></i>
                                             </div>
@@ -233,7 +240,7 @@
                                     <h5>Oliver Reyes</h5>
                                     <h6>Web Designer</h6>
                                     <div class="col l6 s6 m6 social-nav model-3d-0 ">
-                                        <a href="#!" class="facebook">
+                                        <a href="https://www.facebook.com/Oliver.Reyes96" class="facebook">
                                             <div class="front">
                                                 <i class="fab fa-facebook-f"></i>
                                             </div>
@@ -297,7 +304,7 @@
             <div class="col l16 m6 12">
                 <div class="titulo">
                     <h6>Grupo</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt autem excepturi vitae aliquid sit exercitationem velit enim animi labore.</p>
+                    <p>El real grupo hizo esto klk tu dice, Conformado por Dulce Perez y Oliver reyes</p>
                 </div>
             </div>
             <div class="col l6 m6 s12">
@@ -322,7 +329,7 @@
         </div>
         <div class="row nomargin">
             <div class="col l12 m12 s12 center creditos">
-                <p>Powered by Dulce, with Materialize</p>
+                <p>Powered by Dulce and Oliver, with Materialize</p>
             </div>
         </div> 
     </div>  

@@ -39,22 +39,19 @@
     <h2><?php echo $titulo; ?></h2>
     <div class="row">
         <?php foreach($buscarA as $post): ?>
-           <div class="col l6 m6 s12">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                       <img class="activator img_noticias" src="<?php echo RUTA; ?>/img/<?php echo $post['thumb'];  ?>">
-                    </div>
-                    <div class="card-content thumb">
-                        <span class="card-title activator grey-text text-darken-4 titulo_noticia"><?php echo $post['titulo'];?><i class="material-icons right">more_vert</i></span>
-                        <p class="continuar"><a href="single.php?id=<?php echo $post['id']; ?>">Ver mas</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><?php echo $post['titulo'];  ?><i class="material-icons right">close</i></span>
-                        <p class="fecha"><?php echo fecha($post['fecha']); ?></p>
-                        <p class="extracto"><?php echo $post['extracto'];  ?></p>
-                    </div>
+        <div class="col l4  m4 s12 z-depth-5">
+            <div class="card">
+                <div class="card-image">
+                    <img src="fotos/<?php echo $post['imagen'] ?>" alt="">
+                    <span class="card-title"><?php echo $post['titulo'] ?></span>
+                    <a
+                       class="btn-floating halfway-fab waves-effect waves-light card-butttoms"
+                       href="foto_accesorio.php?id=<?php echo $post['id']; ?>">
+                       <i class="material-icons">add</i>
+                    </a>
                 </div>
             </div>
+        </div>
         <?php endforeach; ?>
     </div>
 </div>

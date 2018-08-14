@@ -1,3 +1,15 @@
 body{
     background-color:black;
 }
+.formulario{ 
+    margin: 10%;
+    background: linear-gradient(-90deg, black,#FDAB00);
+    border-radius: 10px;
+}
+.btn-btn{
+    margin: 10px;
+}
+h2{
+    color: #FDAB00;
+    text-align: center;
+}

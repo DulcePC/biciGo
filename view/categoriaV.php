@@ -31,22 +31,27 @@
     </nav>
     <div class="contendor">
         <div class="container">
+            <br>
+            <br>
             <div class="row">
                 <div class="col l12 m12 s12">
                     <a href="categoriaA.php">
-                        <div class="accesorio">
+                        <div class="accesorio z-depth-5">
                             <div>
                                 <p class="span-accesorio">Accesorios</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <br>
+            </div>
+            <br>
+            <br>
+            <div class="row">
                 <div class="col l12 m12 s12">
                     <a href="categoriaP.php">
-                        <div class="piezas">
+                        <div class="piezas z-depth-5">
                             <div>
-                                <p class="span-accesorio">Piezas</p>
+                                <p class="span-pieza">Piezas</p>
                             </div>
                         </div>
                     </a>

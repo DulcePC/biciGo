@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="col l12 s12 m12 nav">
-        <div class="right white"><a href="index.php">Volver a la principal</a></div>
+        <div class="right btn z-depth-4 white"><a href="index.php">Volver a la principal</a></div>
         <ul id="slide-out" class="sidenav collapsible">
         <li>
             <div class="user-view">
@@ -39,14 +39,6 @@
                 </div>
             </div>
         </li>
-        <li>
-            <div class="collapsible-header"><i class="fas fa-user-circle"></i>Cuenta</div>
-            <div class="collapsible-body">
-                <div class="publicar">
-                    <a href="#!"><span>Cambiar Nombre</span></a>
-                </div>
-            </div>
-        </li>
         <li class="cerrarmargin"><a class="waves-effect" href="cerrar.php">Cerrar seccion</a></li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger buttom-menu"><i class="material-icons icono_menu">menu</i></a>
@@ -57,7 +49,7 @@
                     <div class="col l4 s4 m4">
                         <div class="public_icon z-depth-5">
                         <a  href="formularioB.php">
-                            <i class="fas fa-plus-circle icon "></i>
+                            <i class="material-icons icon ">add_circle</i>
                             <br>
                             <p class="flow-text">Bicicleta</p>
                         </a>
@@ -66,7 +58,7 @@
                     <div class="col l4 s4 m4">
                         <div class="public_icon z-depth-5">
                             <a href="formularioP.php">
-                                <i class="fas fa-plus-circle icon"></i>
+                                <i class="material-icons icon ">add_circle</i>
                                 <br>
                                 <p class="flow-text">Pieza</p>
                             </a>
@@ -75,7 +67,7 @@
                     <div class="col l4 s4 m4">
                         <div class="public_icon z-depth-5">
                             <a href="formularioA.php">
-                                <i class="fas fa-plus-circle icon"></i>
+                                <i class="material-icons icon ">add_circle</i>
                                 <br>
                                 <p class="flow-text">Accesorio</p>
                             </a>

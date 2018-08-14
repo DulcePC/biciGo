@@ -21,18 +21,24 @@ margin-top: 20px;
 }
 
 .descrip{
-    background-color: white;
+    background: linear-gradient(to right, #e0f2f1  ,#009688 );
 }
 .titulo_descrip{
     text-align: center;
-    font-size: 15px;
 }
 .descrip ul li{
     color:black;
     font-weight: bold;
 }
 .descrip p{
-    text-align: center;
-    color: pink;
+    color: black;
+    font-weight: bold;
 
+}
+.icono_foto{
+    color:black;
+    margin-left: 5px;
+}
+.descrip .p_normal{
+    font-weight: normal;
 }

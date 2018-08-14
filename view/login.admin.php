@@ -11,20 +11,20 @@
 
 </head>
 <body>
-    
     <div class="container">
+    <h2>Bicigo Admin</h2>
         <div class="row">
-            <div class="col l6 m6 s12">
-                <div>
+            <div class="col l12 m12 s12 formulario">
+                <div class="contenedor_form">
                     <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                         <div class="input-field col l12 s12 m12">
                             <input placeholder="Administrador" id="nick" type="text" name = "usuario" class="validate" >
                         </div>
-                        <div class="input-field col l12 s12 m12">
+                        <div class="input-field col l5 s12 m12">
                             <input placeholder="Clave" id="pass"  type="password" name = "password" class="validate" >
                         </div>
                         <div class="col l12 m12 s12">
-                           	<input type="submit" value="Iniciar Sesion" class="btn btn-small green">
+                           	<input type="submit" value="Iniciar Sesion" class="btn btn-small green btn-btn">
                         </div>
                     </form>
                 </div>
