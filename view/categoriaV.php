@@ -24,7 +24,6 @@
     <nav class="navprincipal"> 
         <div class="nav-wrapper">
             <a href="index.php" class="brand-logo"><span id="b">B</span>iciGo</a>
-            <i class="material-icons right show-on-small">search</i>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.php">Inicio</a></li>
             </ul>
@@ -42,6 +41,7 @@
                         </div>
                     </a>
                 </div>
+                <br>
                 <div class="col l12 m12 s12">
                     <a href="categoriaP.php">
                         <div class="piezas">

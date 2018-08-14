@@ -22,8 +22,7 @@
                     <!-- <img src="images/office.jpg"> -->
                 </div>
                 <a href="#user"><img class="circle" src="img/bici10.jpg"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                <a href="#name"><span class="white-text name">Bienvenido!, <?php echo $_SESSION['usuario'];?></span></a>
             </div>
         </li>
         <li>
@@ -105,22 +104,7 @@
                     <td>Alvin</td>
                     <td>Eclair</td>
                     <td>$0.87</td>
-                    <td><a class="btn yellow btn-small">Editar</a></td>
-                    <td><a class="btn red btn-small">Eliminar</a></td>
-                    <td><a class="btn green btn-small">Ver</a></td>
-                </tr>
-                <tr>
-                    <td>Alan</td>
-                    <td>Jellybean</td>
-                    <td>$3.76</td>
-                    <td><a class="btn yellow btn-small">Editar</a></td>
-                    <td><a class="btn red btn-small">Eliminar</a></td>
-                    <td><a class="btn green btn-small">Ver</a></td>
-                </tr>
-                <tr>
-                    <td>Jonathan</td>
-                    <td>Lollipop</td>
-                    <td>$7.00</td>
+                    <td>$0.87</td>
                     <td><a class="btn yellow btn-small">Editar</a></td>
                     <td><a class="btn red btn-small">Eliminar</a></td>
                     <td><a class="btn green btn-small">Ver</a></td>

@@ -56,7 +56,6 @@
                     <div class="nav-wrapper">
                         <a href="index.php" class="brand-logo">
                             <span id="b">B</span>iciGo</a>
-                        <i class="material-icons right show-on-small">search</i>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
                             <li>
                                 <a href="index.php">Inicio</a>
@@ -67,6 +66,14 @@
                         </ul>
                     </div>
                 </nav>
+                <br>
+                <div class="row">
+                    <div class="col l6 right">
+                        <div class="right" id="buscar">
+                            <a href="buscar_categoria.php"><i class="right material-icons show-on-small">search</i></a>
+                        </div>
+                    </div>
+                </div>
                 <div class="container contenedor">
                     <div class="row">
                         <!-- articulos es el nombre con lo que sacamos la paginacion -->

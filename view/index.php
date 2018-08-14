@@ -106,7 +106,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, beatae at quibusdam nihil ad libero nemo dolore dolorum mollitia, quidem, temporibus eligendi et corporis magni voluptatem! Amet ea voluptatibus suscipit aperiam quod nihil harum repellendus? Quasi earum labore adipisci nobis voluptatem provident dignissimos. Nesciunt ad, aperiam temporibus suscipit facilis maiores.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, beatae at quibusdam nihil ad libero nemo dolore dolorum mollitia, quidem, temporibus eligendi et corporis magni voluptatem! Amet ea voluptatibus suscipit aperiam quod nihil harum repellendus? Quasi earum labore adipisci nobis voluptatem provident dignissimos. Nesciunt ad, aperiam temporibus suscipit facilis maiores.</p>
                         </div>
-                        <a class="green btn btn-small right" id="suscribete">Suscribete</a>
+                        <a href="registrate.php" class="green btn btn-small right" id="suscribete">Suscribete</a>
                     </div>
                 </div>
             </div>

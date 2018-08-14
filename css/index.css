@@ -597,3 +597,8 @@ span{
     border: 0;
     }
 } */
+
+#buscar{
+    margin-top:10px;
+    border: 2px solid white;
+}
